@@ -9,4 +9,11 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void QuitGame ()
+    {
+        // Can't happen in the editor so we debug to check that it works
+        Debug.Log("QUIT!");
+        Application.Quit();
+    }
 }
