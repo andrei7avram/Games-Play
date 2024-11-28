@@ -2,12 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class PersonaManager : MonoBehaviour
 {
     public static List<PersonaScript> Personas = new List<PersonaScript>();
     public PersonaScript currentPersona;
     private int index = 0;
+
+    public List<TextMeshProUGUI> textMeshProObjects;
     void Start()
     {
         
@@ -51,6 +55,7 @@ public class PersonaManager : MonoBehaviour
         //Debug.Log("Awards: " + string.Join(", ", currentPersona.Attributes.Awards));
         //Debug.Log("Hobbies: " + string.Join(", ", currentPersona.Attributes.Hobbies));
         //Debug.Log("Background: " + currentPersona.Background);
+        UpdateTextMeshProObjects();
     }
 
     public PersonaScript IncrementCurrentPersona()
@@ -70,4 +75,15 @@ public class PersonaManager : MonoBehaviour
 
         return currentPersona;
     }
+
+    public void UpdateTextMeshProObjects()
+    {
+        textMeshProObjects[0].text = "Name: " + currentPersona.Attributes.Name;
+        textMeshProObjects[1].text = "Age: " + currentPersona.Attributes.Age.ToString();
+        textMeshProObjects[2].text = "Country: " + currentPersona.Attributes.Country;
+        textMeshProObjects[3].text = "HighSchool: " + currentPersona.Attributes.HighSchool;
+        textMeshProObjects[4].text = "Awards: " + string.Join(", ", currentPersona.Attributes.Awards);
+        textMeshProObjects[5].text = "Hobbies: " + string.Join(", ", currentPersona.Attributes.Hobbies);
+    }
 }
+
