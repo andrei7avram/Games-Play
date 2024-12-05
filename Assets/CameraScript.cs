@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraScript : MonoBehaviour
 {
@@ -23,10 +24,13 @@ public class CameraScript : MonoBehaviour
 
     void Update()
     {
-        // Check for mouse input
         if (Input.GetMouseButtonDown(0)) // Left mouse button
         {
-            DetectObject();
+            // Check if the pointer is over a UI element
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                DetectObject();
+            }
         }
     }
 

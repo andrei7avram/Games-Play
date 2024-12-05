@@ -11,6 +11,8 @@ public class PersonaManager : MonoBehaviour
     public PersonaScript currentPersona;
     private int index = 0;
 
+    public String selectedCourse;
+
     public List<TextMeshProUGUI> textMeshProObjects;
     void Start()
     {
@@ -84,6 +86,36 @@ public class PersonaManager : MonoBehaviour
         textMeshProObjects[3].text = "HighSchool: " + currentPersona.Attributes.HighSchool;
         textMeshProObjects[4].text = "Awards: " + string.Join(", ", currentPersona.Attributes.Awards);
         textMeshProObjects[5].text = "Hobbies: " + string.Join(", ", currentPersona.Attributes.Hobbies);
+        textMeshProObjects[6].text = "Background: " + currentPersona.Background;
+    }
+
+    public void SetSelectedCourseCSE()
+    {
+        selectedCourse = "CSE";
+    }
+
+    public void SetSelectedCourseMath()
+    {
+        selectedCourse = "Math";
+    }
+
+    public void SetSelectedCourseIndustrial()
+    {
+        selectedCourse = "Industrial";
+    }
+
+    public void evaluateAnswer()
+    {
+        if (currentPersona.correctAnswers[0] == selectedCourse)
+        {
+            Debug.Log("Correct");
+        } else if (currentPersona.correctAnswers[1] == selectedCourse)
+        {
+            Debug.Log("Partially Correct");
+        } else
+        {
+            Debug.Log("Incorrect");
+        }
     }
 }
 

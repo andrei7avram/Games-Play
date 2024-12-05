@@ -28,12 +28,12 @@ public struct Attribute
 public class PersonaScript : MonoBehaviour
 {
     public string Background;
-    public int correctAnswer;
+    public string[] correctAnswers;
     public Attribute Attributes;
-    public PersonaScript(string background, int correct, Attribute attributes)
+    public PersonaScript(string background, string[] correct, Attribute attributes)
     {
         Background = background;
-        correctAnswer = correct;
+        correctAnswers = correct;
         Attributes = attributes;
     }
     void Start()
@@ -53,7 +53,7 @@ public class PersonaScript : MonoBehaviour
         );
 
         PersonaScript examplePersona = new PersonaScript(
-            "Some background information", 1,
+            "Some background information", new string[] { "CSE", "Math" },
             exampleAttributes
         );
 
@@ -69,7 +69,7 @@ public class PersonaScript : MonoBehaviour
         );
 
         PersonaScript persona1 = new PersonaScript(
-            "TU/Eindhoven",2,
+            "TU/Eindhoven", new string[] { "Industrial", "Math" },
             attributes1
         );
 
