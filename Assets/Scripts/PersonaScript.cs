@@ -11,10 +11,8 @@ public struct Attribute
     public string HighSchool;
     public string[] Awards;
     public string[] Hobbies;
-
-    
-
-    public Attribute(string name, int age, string country, string highSchool, string[] awards, string[] hobbies)
+ 
+    public Attribute(string name, int age, string country, string highSchool, string[] awards, string[] hobbies )
     {
         Name = name;
         Age = age;
@@ -74,7 +72,7 @@ public class PersonaScript : MonoBehaviour
         );
 
         PersonaManager.Personas.Add(persona1);
-        Debug.Log(PersonaManager.Personas[0].Attributes.Name);
+        PersonaManager.PopulateDictionary();
     }
     void Update()
     {
