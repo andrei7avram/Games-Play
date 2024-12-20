@@ -34,14 +34,16 @@ public class PersonaScript : MonoBehaviour
         correctAnswers = correct;
         Attributes = attributes;
     }
-    void Start()
+
+    public void Start()
     {
-        Level1();
+        Level(1);
     }
 
-    public void Level1()
-    {
-        Attribute exampleAttributes = new Attribute(
+    public void Level(int level)
+    {   
+        if (level == 1) {
+            Attribute exampleAttributes = new Attribute(
             "John Doe",
             25,
             "USA",
@@ -73,6 +75,10 @@ public class PersonaScript : MonoBehaviour
 
         PersonaManager.Personas.Add(persona1);
         PersonaManager.PopulateDictionary();
+        } else if(level == 2) {
+            Debug.Log("Level 2");
+        }
+        
     }
     void Update()
     {
