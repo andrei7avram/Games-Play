@@ -8,15 +8,30 @@ using UnityEngine.UI;
 public class PersonaManager : MonoBehaviour
 {
     public static List<PersonaScript> Personas = new List<PersonaScript>();
+
+    public static Dictionary<PersonaScript, int> PersonaDictionary = new Dictionary<PersonaScript, int>();
+
+    public PersonaScript levelCreator;
+    public bool isLevelComplete = false;
     public PersonaScript currentPersona;
     private int index = 0;
+
+    public int finalScore = 0;
 
     public String selectedCourse;
 
     public List<TextMeshProUGUI> textMeshProObjects;
-    void Start()
+    public static void PopulateDictionary()
     {
-        
+        int value = 0;
+        foreach (var persona in Personas)
+        {
+            if (!PersonaDictionary.ContainsKey(persona))
+            {
+                PersonaDictionary.Add(persona, value);
+                value++;
+            }
+        }
     }
 
     void Update()
@@ -39,12 +54,7 @@ public class PersonaManager : MonoBehaviour
         foreach (var persona in Personas)
         {
             Debug.Log("Name: " + persona.Attributes.Name);
-            Debug.Log("Age: " + persona.Attributes.Age);
-            Debug.Log("Country: " + persona.Attributes.Country);
-            Debug.Log("HighSchool: " + persona.Attributes.HighSchool);
-            Debug.Log("Awards: " + string.Join(", ", persona.Attributes.Awards));
-            Debug.Log("Hobbies: " + string.Join(", ", persona.Attributes.Hobbies));
-            Debug.Log("Background: " + persona.Background);
+            
         }
     }
 
@@ -69,11 +79,12 @@ public class PersonaManager : MonoBehaviour
             index++;
         }else if (index == Personas.Count)
         {
-            index = 0;
-            currentPersona = Personas[index];
-            index++;
+            //index = 0;
+            //currentPersona = Personas[index];
+            //index++;
+            isLevelComplete = true;
+            Debug.Log("No more personas");
         }
-        Debug.Log(index + " " + Personas.Count);
 
         return currentPersona;
     }
@@ -105,17 +116,63 @@ public class PersonaManager : MonoBehaviour
     }
 
     public void evaluateAnswer()
+    {  
+            if (currentPersona.correctAnswers[0] == selectedCourse)
+            {
+                Debug.Log("Correct");
+                PersonaDictionary[currentPersona] =  2;
+                finalScore += 2;
+                Debug.Log(finalScore);
+                IncrementCurrentPersona();
+                DisplayCurrentPersona();
+                if (isLevelComplete)
+                {
+                    FinishLevel();
+                }
+            } else if (currentPersona.correctAnswers[1] == selectedCourse)
+            {
+                Debug.Log("Partially Correct");
+                PersonaDictionary[currentPersona] =  1;
+                finalScore += 1;
+                Debug.Log(finalScore);
+                IncrementCurrentPersona();
+                DisplayCurrentPersona();
+                if (isLevelComplete)
+                {
+                    FinishLevel();
+                }
+            } else
+            {
+                Debug.Log("Incorrect");
+                PersonaDictionary[currentPersona] =  0;
+                Debug.Log(finalScore);
+                IncrementCurrentPersona();
+                DisplayCurrentPersona();
+                if (isLevelComplete)
+                {
+                    FinishLevel();
+                }
+            }
+    }
+
+    public int SumValues()
     {
-        if (currentPersona.correctAnswers[0] == selectedCourse)
+
+        foreach (var kvp in PersonaDictionary)
         {
-            Debug.Log("Correct");
-        } else if (currentPersona.correctAnswers[1] == selectedCourse)
-        {
-            Debug.Log("Partially Correct");
-        } else
-        {
-            Debug.Log("Incorrect");
+            finalScore += kvp.Value;
         }
+        return finalScore;
+    }
+
+    public void FinishLevel(){
+        Debug.Log("Final Score: " + finalScore);
+    }
+
+    public void NextLevel(){
+        int currentlevel = 1;
+        currentlevel++;
+        levelCreator.Level(currentlevel);
     }
 }
 
