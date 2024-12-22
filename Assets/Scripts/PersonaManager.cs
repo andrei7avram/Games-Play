@@ -155,18 +155,28 @@ public class PersonaManager : MonoBehaviour
             }
     }
 
-    public int SumValues()
+    public void ClearPersonas()
     {
+        List<PersonaScript> keysToRemove = new List<PersonaScript>();
 
         foreach (var kvp in PersonaDictionary)
         {
-            finalScore += kvp.Value;
+            if (kvp.Value == 2)
+            {
+                keysToRemove.Add(kvp.Key);
+            }
         }
-        return finalScore;
+
+        foreach (var key in keysToRemove)
+        {
+            PersonaDictionary.Remove(key);
+        }
     }
 
     public void FinishLevel(){
         Debug.Log("Final Score: " + finalScore);
+        NextLevel();
+        ClearPersonas();
     }
 
     public void NextLevel(){

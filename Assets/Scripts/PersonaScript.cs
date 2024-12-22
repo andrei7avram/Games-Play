@@ -77,6 +77,22 @@ public class PersonaScript : MonoBehaviour
         PersonaManager.PopulateDictionary();
         } else if(level == 2) {
             Debug.Log("Level 2");
+
+            Attribute exampleAttributes1 = new Attribute(
+            "John Pork",
+            18,
+            "Russia",
+            "Example High School",
+            new string[] { "Award1", "Award2" },
+            new string[] { "Hobby1", "Hobby2" }
+        );
+
+        PersonaScript examplePersona1 = new PersonaScript(
+            "Some background information", new string[] { "CSE", "Math" },
+            exampleAttributes1
+        );
+
+        PersonaManager.Personas.Add(examplePersona1);
         }
         
     }

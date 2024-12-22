@@ -4549,7 +4549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0408700d4722cd94bab92bfea3602864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelCreator: {fileID: 1887416199}
+  isLevelComplete: 0
   currentPersona: {fileID: 0}
+  finalScore: 0
   selectedCourse: 
   textMeshProObjects:
   - {fileID: 1708287558}
