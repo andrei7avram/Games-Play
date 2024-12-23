@@ -7,28 +7,42 @@ public class Player : MonoBehaviour
     public float velocity = 2.4f;
     private Rigidbody2D rigidbody;
 
-    // Start is called before the first frame update
+    // Reference to GameManager.
+    public GameManager gameManager;
+
+    // Player state.
+    public bool isDead = false;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        // Allow movement only if not dead.
+        if (Input.GetKeyDown(KeyCode.Space) && !isDead)
         {
             rigidbody.velocity = Vector2.up * velocity;
         }
     }
 
-    public GameManager gameManager;
-    public bool isDead = false;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isDead = true;
-        gameManager.GameOver();
+        // Set death state and call GameOver.
+        if (!isDead)
+        {
+            isDead = true;
+            rigidbody.velocity = Vector2.zero; // Stop movement on death.
+            gameManager.GameOver();
+        }
+    }
+
+    // Add a reset method for cleaner restart handling.
+    public void ResetPlayer()
+    {
+        isDead = false;
+        rigidbody.velocity = Vector2.zero; // Reset velocity.
+        transform.localPosition = Vector3.zero; // Reset position relative to the canvas.
     }
 }
-

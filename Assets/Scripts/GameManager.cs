@@ -2,53 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject startButton;
     public Player player;
-
-    public Text gameOverCountdown;
-    public float countTimer = 20;
+    public Vector3 playerStartPosition = new Vector3(0, 0, 0); // Desired reset position for the player.
 
     // Start is called before the first frame update
     void Start()
     {
-        gameOverCountdown.gameObject.SetActive(false);
-        Time.timeScale = 0;
+        Time.timeScale = 0; // Start game paused.
     }
 
     private void Update()
     {
-        if( player.isDead )
+        if (player.isDead)
         {
-            gameOverCountdown.gameObject.SetActive(true);
-            countTimer -= Time.unscaledDeltaTime;
+                RestartGame();
         }
 
-        gameOverCountdown.text = "Restarting in " + (countTimer).ToString("0");
-
-        if(countTimer < 0)
+        if (Input.GetKeyDown(KeyCode.Space) && !player.isDead)
         {
-            RestartGame();
+            StartGame();
         }
     }
 
     public void StartGame()
     {
-        startButton.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1; // Resume game time.
     }
 
     public void GameOver()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 0; // Pause game time when the player dies.
     }
-
 
     public void RestartGame()
     {
-        EditorSceneManager.LoadScene(0);
+        // Reset player position relative to the canvas.
+        player.transform.localPosition = playerStartPosition;
+
+        // Reset Rigidbody2D velocity.
+        Rigidbody2D playerRigidbody = player.GetComponent<Rigidbody2D>();
+        playerRigidbody.velocity = Vector2.zero;
+
+        // Reset player state.
+        player.isDead = false;
+
+        // Destroy all Pipe objects.
+        GameObject[] pipes = GameObject.FindGameObjectsWithTag("Pipe");
+        foreach (GameObject pipe in pipes)
+        {
+            Destroy(pipe);
+        }
+
+       Time.timeScale = 0;
     }
 }
