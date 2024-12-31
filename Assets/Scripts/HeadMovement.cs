@@ -7,13 +7,18 @@ public class HeadMovement : MonoBehaviour
     public float movementSpeed = 2f;
     public int numberOfMoves = 3;
 
+    private AudioSource audioSource;
+
     void Start()
     {
         originalPosition = transform.localPosition;
+        audioSource = GetComponent<AudioSource>();
+ 
     }
 
     void OnMouseDown()
     {
+        audioSource.Play();
         StopAllCoroutines();
         StartCoroutine(MoveHead());
     }
