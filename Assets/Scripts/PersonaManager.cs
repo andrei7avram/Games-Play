@@ -16,9 +16,15 @@ public class PersonaManager : MonoBehaviour
     public PersonaScript currentPersona;
     private int index = 0;
 
+    public Canvas FinalScoreCanvas;
+
+    public bool isFinalScoreCanvasActive = false;
+
     public int finalScore = 0;
 
     public String selectedCourse;
+
+    public StarRenderer starRenderer;
 
     public List<TextMeshProUGUI> textMeshProObjects;
     public static void PopulateDictionary()
@@ -29,8 +35,14 @@ public class PersonaManager : MonoBehaviour
             if (!PersonaDictionary.ContainsKey(persona))
             {
                 PersonaDictionary.Add(persona, value);
-                value++;
+            }else
+            {
+                Debug.Log("Persona already exists in dictionary");
             }
+        }
+        foreach (var kvp in PersonaDictionary)
+        {
+            Debug.Log("Key: " + kvp.Key.Attributes.Name + " Value: " + kvp.Value);
         }
     }
 
@@ -46,6 +58,8 @@ public class PersonaManager : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             IncrementCurrentPersona();
+        }else if (Input.GetKeyDown(KeyCode.E)) {
+            PopulateDictionary();
         }
     }
 
@@ -77,6 +91,7 @@ public class PersonaManager : MonoBehaviour
             
             currentPersona = Personas[index];
             index++;
+            Debug.Log("Index: " + index + " Count: " + Personas.Count);
         }else if (index == Personas.Count)
         {
             //index = 0;
@@ -170,13 +185,28 @@ public class PersonaManager : MonoBehaviour
         foreach (var key in keysToRemove)
         {
             PersonaDictionary.Remove(key);
+            Personas.Remove(key);
         }
     }
 
     public void FinishLevel(){
         Debug.Log("Final Score: " + finalScore);
-        NextLevel();
+        FinalScoreCanvas.gameObject.SetActive(true);
+        index = 0;
+        isLevelComplete = false;
+        finalScore = 0;
+        starRenderer.LoadStars();
+        //IncrementCurrentPersona();
+        
+    }
+
+    public void Increment() {
         ClearPersonas();
+        starRenderer.starIndex = 0;
+        NextLevel();
+        IncrementCurrentPersona();
+        DisplayCurrentPersona();
+        FinalScoreCanvas.gameObject.SetActive(false);
     }
 
     public void NextLevel(){
