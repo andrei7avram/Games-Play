@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Fade To Black #1.unity
+    guid: 736fcc0097e34b34783a96b67609fc60
+  - enabled: 1
+    path: Assets/Scenes/Fade To Black #2.unity
+    guid: d11968f10c6b5494992ff5cb19bc6692
   m_configObjects: {}
