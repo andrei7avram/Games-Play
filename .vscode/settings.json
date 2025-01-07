@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Games-Play.sln"
+    "dotnet.defaultSolution": "Games-Play.sln",
+    "FSharp.suggestGitignore": false
 }
