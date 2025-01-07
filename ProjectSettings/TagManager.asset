@@ -8,6 +8,7 @@ TagManager:
   - Paper
   - PC Projection
   - Pipe
+  - Monitor
   layers:
   - Default
   - TransparentFX
