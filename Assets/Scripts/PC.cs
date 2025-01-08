@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PC : MonoBehaviour
 {
-    public GameObject[] panels = new GameObject[5];
+    public GameObject[] panels = new GameObject[6];
 
     public Camera targetCamera; 
     public Camera currentCamera; 
@@ -83,7 +83,7 @@ public class PC : MonoBehaviour
         Debug.Log("Button pressed");
     }
 
-    public void Main()
+    public void Background()
     {
         ShowPanel(0);
     }
@@ -106,6 +106,11 @@ public class PC : MonoBehaviour
     public void Help()
     {
         ShowPanel(4);
+    }
+
+    public void Studies()
+    {
+        ShowPanel(5);
     }
 
     private void ShowPanel(int index)
