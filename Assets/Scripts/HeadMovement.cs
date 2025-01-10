@@ -3,6 +3,8 @@ using UnityEngine;
 public class HeadMovement : MonoBehaviour
 {
     private Vector3 originalPosition;
+
+    public Transform targetTransform;
     public float movementDistance = 0.5f;
     public float movementSpeed = 2f;
     public int numberOfMoves = 3;
@@ -11,7 +13,7 @@ public class HeadMovement : MonoBehaviour
 
     void Start()
     {
-        originalPosition = transform.localPosition;
+        originalPosition = targetTransform.localPosition;
         audioSource = GetComponent<AudioSource>();
  
     }
@@ -24,7 +26,8 @@ public class HeadMovement : MonoBehaviour
     }
 
     private System.Collections.IEnumerator MoveHead()
-    {
+    {   
+        Debug.Log("Mouse Down");
         for (int i = 0; i < numberOfMoves; i++)
         {
             yield return MoveToPosition(originalPosition + Vector3.left * movementDistance);
