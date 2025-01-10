@@ -3,7 +3,16 @@ guid: 8fee7de9e7e45cb488c4a0a392ea755e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ComputerScience: {fileID: 2800000, guid: 25bd259763b988848ae95b47192129f0, type: 3}
+  - AppliedPhysics: {fileID: 2800000, guid: 97c0d70710a7c804781f39c4de748001, type: 3}
+  - IndustrialDesign: {fileID: 2800000, guid: 00a38a52887c827429cc4f374651686f, type: 3}
+  - Architecture: {fileID: 2800000, guid: ce17d98f37f689d43bc819ce81e7a02d, type: 3}
+  - MedicalSciences: {fileID: 2800000, guid: 14daa656337bf0a46805f955f0272bc1, type: 3}
+  - ElectricalEngineering: {fileID: 2800000, guid: cfe1ddc0c969d33489e30f2637f98e3d, type: 3}
+  - ChemicalEngineering: {fileID: 2800000, guid: af62cbe5460b530468ed901054aac35b, type: 3}
+  - Sustainable: {fileID: 2800000, guid: 36da1ab88b52c594aaeef70e44785a4f, type: 3}
+  - Psychology: {fileID: 2800000, guid: cd0416bae5b979d409bf7de029cfb09f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
