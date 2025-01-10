@@ -7,9 +7,12 @@ public class Player : MonoBehaviour
     public float velocity = 2.4f;
     private Rigidbody2D playerRigidbody;
 
+    // Reference to GameManager
     public GameManager gameManager;
+
+    //Player state.
     public bool isDead = false;
-    private bool isPlayerEnabled = false; // New flag to control player activity.
+    private bool isPlayerEnabled = false;
 
     void Start()
     {
@@ -33,6 +36,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Set death state and call GameOver.
         if (!isDead)
         {
             isDead = true;
@@ -45,7 +49,7 @@ public class Player : MonoBehaviour
     public void EnablePlayer()
     {
         isPlayerEnabled = true;
-        playerRigidbody.bodyType = RigidbodyType2D.Dynamic; // Reactivate physics.
+        playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
     }
 
     // Disable player physics and controls.
@@ -53,7 +57,7 @@ public class Player : MonoBehaviour
     {
         isPlayerEnabled = false;
         playerRigidbody.velocity = Vector2.zero; // Stop movement.
-        playerRigidbody.bodyType = RigidbodyType2D.Kinematic; // Disable physics.
+        playerRigidbody.bodyType = RigidbodyType2D.Kinematic;
     }
 
     // Add a reset method for cleaner restart handling.

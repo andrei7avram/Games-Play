@@ -28,27 +28,24 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        isPaused = false; // Unpause the game.
+        isPaused = false; // Resume game.
         player.EnablePlayer(); // Enable player controls and physics.
-        Debug.Log("Game started!");
     }
 
     public void GameOver()
     {
         PauseGame(); // Pause the game when the player dies.
-        Debug.Log("Game over!");
     }
 
     public void PauseGame()
     {
         isPaused = true; // Pause the game.
         player.DisablePlayer(); // Disable player controls and physics.
-        Debug.Log("Game paused.");
     }
 
     public void RestartGame()
     {
-        // Reset player position.
+        // Reset player position relative to the canvas.
         player.transform.localPosition = playerStartPosition;
 
         // Reset player state.
@@ -62,6 +59,5 @@ public class GameManager : MonoBehaviour
         }
 
         PauseGame(); // Pause the game after restarting.
-        Debug.Log("Game restarted.");
     }
 }
