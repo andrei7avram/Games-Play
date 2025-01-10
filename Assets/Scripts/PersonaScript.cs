@@ -76,7 +76,7 @@ public class PersonaScript : MonoBehaviour
         );
 
         PersonaScript examplePersona = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "Math", "CSE" },
             exampleAttributes
         );
 
