@@ -46,7 +46,6 @@ public class PC : MonoBehaviour
                     SwitchToCurrentCamera();
                     worldSpaceCanvas.worldCamera = currentCamera;
                     ray = currentCamera.ScreenPointToRay(Input.mousePosition);
-                    Debug.Log(hit.collider.gameObject.name);
                 }
             }
         }
