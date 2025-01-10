@@ -9,6 +9,15 @@ TagManager:
   - PC Projection
   - Pipe
   - Monitor
+  - Industrial
+  - CSE
+  - Physics
+  - Architecture
+  - Medical
+  - Electrical
+  - Chemistry
+  - Sustainable
+  - Psychology
   layers:
   - Default
   - TransparentFX

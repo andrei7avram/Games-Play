@@ -13,11 +13,14 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     private UnityEngine.Vector3 originalPosition;
     public RectTransform dropArea;
 
+    public PersonaManager personaManager;
+
     public bool isAssigned = false;
 
     public void Start()
     {
         originalScale = transform.localScale;
+        personaManager = GameObject.Find("Manager").GetComponent<PersonaManager>();
     }
 
     public void DragHandler()
@@ -45,7 +48,35 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         {
             Debug.Log("Dropped in the correct area!");
             isAssigned = true;
-            // Optionally, snap to the drop area position
+            if (CompareTag("Industrial")) {
+                Debug.Log("Industrial");
+                personaManager.SetSelectedCourseIndustrial();
+            }else if (CompareTag("CSE")) {
+                Debug.Log("CSE");
+                personaManager.SetSelectedCourseCSE();
+                
+            }else if (CompareTag("Physics")) {
+                Debug.Log("Physics");
+                personaManager.SetSelectedCoursePhysics();
+            }else if (CompareTag("Architecture")) {
+                Debug.Log("Architecture");
+                personaManager.SetSelectedCourseArchitecture();
+            }else if (CompareTag("Medical")) {
+                Debug.Log("Medical");
+                personaManager.SetSelectedCourseMedical();
+            }else if (CompareTag("Electrical")) {
+                Debug.Log("Electrical");
+                personaManager.SetSelectedCourseElectrical();
+            }else if (CompareTag("Chemistry")) {
+                Debug.Log("Chemistry");
+                personaManager.SetSelectedCourseChemistry();
+            }else if (CompareTag("Sustainable")) {
+                Debug.Log("Sustainable");
+                personaManager.SetSelectedCourseSustainable();
+            } else if (CompareTag("Psychology")) {
+                Debug.Log("Psychology");
+                personaManager.SetSelectedCoursePsychology();
+            }
             transform.position = originalPosition;
         }
         else

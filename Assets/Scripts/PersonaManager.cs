@@ -118,17 +118,57 @@ public class PersonaManager : MonoBehaviour
     public void SetSelectedCourseCSE()
     {
         selectedCourse = "CSE";
+        evaluateAnswer();
     }
 
-    public void SetSelectedCourseMath()
+    public void SetSelectedCoursePhysics()
     {
-        selectedCourse = "Math";
+        selectedCourse = "Physics";
+        evaluateAnswer();
     }
 
     public void SetSelectedCourseIndustrial()
     {
         selectedCourse = "Industrial";
+        evaluateAnswer();
     }
+
+    public void SetSelectedCourseArchitecture()
+    {
+        selectedCourse = "Architecture";
+        evaluateAnswer();
+    }
+
+    public void SetSelectedCourseMedical()
+    {
+        selectedCourse = "Medical";
+        evaluateAnswer();
+    }
+
+    public void SetSelectedCourseElectrical()
+    {
+        selectedCourse = "Electrical";
+        evaluateAnswer();
+    }
+
+    public void SetSelectedCourseChemistry()
+    {
+        selectedCourse = "Chemistry";
+        evaluateAnswer();
+    }
+
+    public void SetSelectedCourseSustainable()
+    {
+        selectedCourse = "Sustainable";
+        evaluateAnswer();
+    }
+
+    public void SetSelectedCoursePsychology()
+    {
+        selectedCourse = "Psychology";
+        evaluateAnswer();
+    }
+
 
     public void evaluateAnswer()
     {  
