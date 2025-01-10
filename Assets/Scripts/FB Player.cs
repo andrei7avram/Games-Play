@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
     {
         isPlayerEnabled = true;
         playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        playerRigidbody.velocity = Vector2.up * velocity;
     }
 
     // Disable player physics and controls.
