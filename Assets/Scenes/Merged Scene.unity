@@ -6188,7 +6188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce62563110f3934d8ffb2ed828bb9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDistance: 1.23
+  targetTransform: {fileID: 879029879}
+  movementDistance: 0.15
   movementSpeed: 5
   numberOfMoves: 3
 --- !u!54 &879029882
