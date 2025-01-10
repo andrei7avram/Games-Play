@@ -1,27 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public Player player;
     public Vector3 playerStartPosition = new Vector3(0, 0, 0); // Desired reset position for the player.
+    public bool isPaused = true; // Game starts paused.
 
-    // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0; // Start game paused.
+        PauseGame(); // Start with the game paused.
     }
 
     private void Update()
     {
         if (player.isDead)
         {
-                RestartGame();
+            RestartGame();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !player.isDead)
+        if (Input.GetKeyDown(KeyCode.Space) && isPaused)
         {
             StartGame();
         }
@@ -29,22 +28,28 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        Time.timeScale = 1; // Resume game time.
+        isPaused = false; // Unpause the game.
+        player.EnablePlayer(); // Enable player controls and physics.
+        Debug.Log("Game started!");
     }
 
     public void GameOver()
     {
-        Time.timeScale = 0; // Pause game time when the player dies.
+        PauseGame(); // Pause the game when the player dies.
+        Debug.Log("Game over!");
+    }
+
+    public void PauseGame()
+    {
+        isPaused = true; // Pause the game.
+        player.DisablePlayer(); // Disable player controls and physics.
+        Debug.Log("Game paused.");
     }
 
     public void RestartGame()
     {
-        // Reset player position relative to the canvas.
+        // Reset player position.
         player.transform.localPosition = playerStartPosition;
-
-        // Reset Rigidbody2D velocity.
-        Rigidbody2D playerRigidbody = player.GetComponent<Rigidbody2D>();
-        playerRigidbody.velocity = Vector2.zero;
 
         // Reset player state.
         player.isDead = false;
@@ -56,6 +61,7 @@ public class GameManager : MonoBehaviour
             Destroy(pipe);
         }
 
-       Time.timeScale = 0;
+        PauseGame(); // Pause the game after restarting.
+        Debug.Log("Game restarted.");
     }
 }

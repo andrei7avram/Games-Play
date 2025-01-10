@@ -12669,6 +12669,7 @@ MonoBehaviour:
   queueTime: 3
   obstacle: {fileID: 3336573155143704759, guid: a27a3f2101052b24483297bd55e10aae, type: 3}
   height: 0.3
+  gameManager: {fileID: 1919114419}
 --- !u!1 &1868362637
 GameObject:
   m_ObjectHideFlags: 0
@@ -12853,6 +12854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 143529413}
   playerStartPosition: {x: 0, y: 0, z: -100}
+  isPaused: 1
 --- !u!1 &1933333064
 GameObject:
   m_ObjectHideFlags: 0
