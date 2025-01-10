@@ -12,6 +12,8 @@ public class PC : MonoBehaviour
     public Canvas worldSpaceCanvas;
     public PersonaManager personaManager;
 
+    public Canvas FlyerCanvas;
+
     Ray ray;
 
     public bool isTargetCameraActive = false;
@@ -31,7 +33,7 @@ public class PC : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                
+                Debug.Log("Hit object: " + hit.collider.gameObject.name);
                 if (hit.collider.gameObject.CompareTag("Monitor"))
                 {   
                     isTargetCameraActive = true;
@@ -40,8 +42,12 @@ public class PC : MonoBehaviour
                     ray = targetCamera.ScreenPointToRay(Input.mousePosition);
                     Debug.Log("Switching to target camera");
                    
-                }else
-                {   
+                }else if (hit.collider.gameObject.CompareTag("Flyers")) {
+                    
+                    FlyerCanvas.enabled = true;
+                    Debug.Log("FlyerCanvas active");
+                    
+                } else {   
                     isTargetCameraActive = false;
                     SwitchToCurrentCamera();
                     worldSpaceCanvas.worldCamera = currentCamera;

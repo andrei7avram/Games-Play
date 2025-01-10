@@ -15,12 +15,15 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public PersonaManager personaManager;
 
+    public Canvas FlyerCanvas;
+
     public bool isAssigned = false;
 
     public void Start()
     {
         originalScale = transform.localScale;
         personaManager = GameObject.Find("Manager").GetComponent<PersonaManager>();
+        FlyerCanvas = GameObject.Find("FlyerCanvas").GetComponent<Canvas>();
     }
 
     public void DragHandler()
@@ -36,12 +39,14 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         // Scale down the image when dragging starts
         transform.localScale = originalScale * 0.6f;
         originalPosition = transform.position;
+        
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         // Reset the image scale when dragging ends
         transform.localScale = originalScale;
+        FlyerCanvas.enabled = false;
 
         // Check if the drop area contains the pointer position
         if (IsPointerOverDropArea(eventData.position))
