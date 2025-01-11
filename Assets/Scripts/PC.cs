@@ -50,6 +50,7 @@ public class PC : MonoBehaviour
                 } else {   
                     isTargetCameraActive = false;
                     SwitchToCurrentCamera();
+                    Debug.Log("Switching to current camera");
                     worldSpaceCanvas.worldCamera = currentCamera;
                     ray = currentCamera.ScreenPointToRay(Input.mousePosition);
                 }
