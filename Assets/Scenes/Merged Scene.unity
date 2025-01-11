@@ -5846,7 +5846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11010.843, y: 739.1182}
+  m_AnchoredPosition: {x: -11159.738, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -10511,13 +10511,42 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89946e947dce1fe44b9c914de16aab5f, type: 3}
       insertIndex: 4
       addedObject: {fileID: 269382152}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: 89946e947dce1fe44b9c914de16aab5f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1116315938}
   m_SourcePrefab: {fileID: 100100000, guid: 89946e947dce1fe44b9c914de16aab5f, type: 3}
 --- !u!4 &1116315936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89946e947dce1fe44b9c914de16aab5f, type: 3}
   m_PrefabInstance: {fileID: 1116315935}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1116315937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: 89946e947dce1fe44b9c914de16aab5f, type: 3}
+  m_PrefabInstance: {fileID: 1116315935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1116315938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116315937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.002031179, y: 0.29443237, z: 0.14158542}
+  m_Center: {x: 0.00025976612, y: -0.025533214, z: 0.0029555093}
 --- !u!1001 &1123451378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11138,14 +11167,14 @@ MonoBehaviour:
   m_Name: _107
   m_EditorClassIdentifier: 
   levelCreator: {fileID: 1179917788}
-  person1: {fileID: 0}
-  person2: {fileID: 0}
-  person3: {fileID: 0}
-  person4: {fileID: 0}
-  person5: {fileID: 0}
-  person6: {fileID: 0}
-  person7: {fileID: 0}
-  person8: {fileID: 0}
+  person1: {fileID: 1944642817}
+  person2: {fileID: 309206183}
+  person3: {fileID: 1550125037}
+  person4: {fileID: 1405341679}
+  person5: {fileID: 1078207607}
+  person6: {fileID: 539876611}
+  person7: {fileID: 70349569}
+  person8: {fileID: 1298915319}
   isLevelComplete: 0
   currentPersona: {fileID: 0}
   FinalScoreCanvas: {fileID: 433825688}
@@ -14776,6 +14805,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 763320242}
     m_Modifications:
+    - target: {fileID: 697663170799521305, guid: c53fe300edecc524f9f511dc58792d47, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5521164
+      objectReference: {fileID: 0}
+    - target: {fileID: 697663170799521305, guid: c53fe300edecc524f9f511dc58792d47, type: 3}
+      propertyPath: m_Center.x
+      value: -0.004987538
+      objectReference: {fileID: 0}
+    - target: {fileID: 697663170799521305, guid: c53fe300edecc524f9f511dc58792d47, type: 3}
+      propertyPath: m_Center.y
+      value: 1.2751532
+      objectReference: {fileID: 0}
     - target: {fileID: 8422759270287814297, guid: c53fe300edecc524f9f511dc58792d47, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.77734
