@@ -6,26 +6,20 @@ using DialogueEditor;
 public class Conversation : MonoBehaviour
 {
     [SerializeField] private NPCConversation myConversation;
-    [SerializeField] private GameObject hoverText;
-    private bool isHovering = false;
+    // [SerializeField] private GameObject hoverText;
 
-    private void OnMouseEnter()
-    {
-        isHovering = true;
-        hoverText.SetActive(true);
-    }
+    // private void OnMouseEnter()
+    // {
+    //     hoverText.SetActive(true);
+    // }
 
-    private void OnMouseExit()
-    {
-        isHovering = false;
-        hoverText.SetActive(false);
-    }
+    // private void OnMouseExit()
+    // {
+    //     hoverText.SetActive(false);
+    // }
 
-    private void Update()
+    private void OnMouseDown()
     {
-        if (isHovering && Input.GetKeyDown(KeyCode.F))
-        {
-             ConversationManager.Instance.StartConversation(myConversation);
-        }
+        ConversationManager.Instance.StartConversation(myConversation);
     }
 }
