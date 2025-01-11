@@ -12,6 +12,15 @@ public class PersonaManager : MonoBehaviour
     public static Dictionary<PersonaScript, int> PersonaDictionary = new Dictionary<PersonaScript, int>();
 
     public PersonaScript levelCreator;
+    public GameObject person1;
+    public GameObject person2;
+    public GameObject person3;
+    public GameObject person4;
+    public GameObject person5;
+    public GameObject person6;
+    public GameObject person7;
+    public GameObject person8;
+
     public bool isLevelComplete = false;
     public PersonaScript currentPersona;
     private int index = 0;
@@ -74,6 +83,7 @@ public class PersonaManager : MonoBehaviour
 
     public void DisplayCurrentPersona()
     {
+        SetAllPersonInactive();
         Debug.Log("Name: " + currentPersona.Attributes.Name);
         //Debug.Log("Age: " + currentPersona.Attributes.Age);
         //Debug.Log("Country: " + currentPersona.Attributes.Country);
@@ -81,7 +91,39 @@ public class PersonaManager : MonoBehaviour
         //Debug.Log("Awards: " + string.Join(", ", currentPersona.Attributes.Awards));
         //Debug.Log("Hobbies: " + string.Join(", ", currentPersona.Attributes.Hobbies));
         //Debug.Log("Background: " + currentPersona.Background);
+        
+        if (currentPersona.Attributes.Name == "Person1") {
+            person1.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person2") {
+            person2.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person3") {
+            person3.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person4") {
+            person4.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person5") {
+            person5.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person6") {
+            person6.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person7") {
+            person7.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person8") {
+            person8.SetActive(true); 
+        }
+
+
         UpdateTextMeshProObjects();
+    }
+
+    public void SetAllPersonInactive() // This functions will set all personas inactive
+    {
+        person1.SetActive(false);
+        person2.SetActive(false);
+        person3.SetActive(false);
+        person4.SetActive(false);
+        person5.SetActive(false);
+        person6.SetActive(false);
+        person7.SetActive(false);
+        person8.SetActive(false);
     }
 
     public PersonaScript IncrementCurrentPersona()

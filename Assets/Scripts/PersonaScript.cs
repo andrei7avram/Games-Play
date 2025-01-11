@@ -67,7 +67,7 @@ public class PersonaScript : MonoBehaviour
     {   
         if (level == 1) {
             Attribute exampleAttributes = new Attribute(
-            "John Doe",
+            "Person1",
             25,
             "USA",
             "Example High School",
@@ -83,7 +83,7 @@ public class PersonaScript : MonoBehaviour
         PersonaManager.Personas.Add(examplePersona);
 
         Attribute attributes1 = new Attribute(
-            "Andrei",
+            "Person2",
             25,
             "Romania",
             "Example High School",
@@ -99,7 +99,7 @@ public class PersonaScript : MonoBehaviour
         PersonaManager.Personas.Add(persona1);
 
         Attribute exampleAttributes3 = new Attribute(
-            "John Fortnite",
+            "Person3",
             25,
             "USA",
             "Example High School",
@@ -118,7 +118,7 @@ public class PersonaScript : MonoBehaviour
             Debug.Log("Level 2");
 
             Attribute exampleAttributes1 = new Attribute(
-            "John Pork",
+            "Person4",
             18,
             "Russia",
             "Example High School",
@@ -134,7 +134,7 @@ public class PersonaScript : MonoBehaviour
         PersonaManager.Personas.Add(examplePersona1);
 
             Attribute exampleAttributes2 = new Attribute(
-            "John Pork 2",
+            "Person5",
             18,
             "Russia",
             "Example High School",
@@ -150,7 +150,7 @@ public class PersonaScript : MonoBehaviour
         PersonaManager.Personas.Add(examplePersona2);
 
         Attribute exampleAttributes4 = new Attribute(
-            "John Pork 3",
+            "Person6",
             18,
             "Russia",
             "Example High School",
