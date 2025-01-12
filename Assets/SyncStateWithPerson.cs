@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class SyncStateWithPerson : MonoBehaviour
 {
-    public GameObject person2; // Reference to the Person 2 GameObject
+    public GameObject person;
 
     void Update()
     {
-        if (person2 != null)
+        if (person != null)
         {
-            gameObject.SetActive(person2.activeSelf);
+            gameObject.SetActive(person.activeSelf);
         }
     }
 }
