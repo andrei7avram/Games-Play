@@ -4,11 +4,13 @@ public class SyncStateWithPerson : MonoBehaviour
 {
     public GameObject person;
 
+    public GameObject Backpack;
+
     void Update()
     {
         if (person != null)
         {
-            gameObject.SetActive(person.activeSelf);
+            Backpack.SetActive(person.activeSelf);
         }
     }
 }
