@@ -9,6 +9,7 @@ public class PC : MonoBehaviour
 
     public Camera targetCamera; 
     public Camera currentCamera; 
+    public Camera posterCamera; 
     public Canvas worldSpaceCanvas;
     public PersonaManager personaManager;
 
@@ -17,15 +18,19 @@ public class PC : MonoBehaviour
     Ray ray;
 
     public bool isTargetCameraActive = false;
+    public bool isPosterCameraActive = false;
 
     public void Update()
     {
         if (Input.GetMouseButtonDown(0) && !personaManager.isLevelComplete) 
         {
-            if (!isTargetCameraActive) {
+            if (!isTargetCameraActive && !isPosterCameraActive) {
                 ray = currentCamera.ScreenPointToRay(Input.mousePosition);
-            }else {
+            }else if (!(isPosterCameraActive)) {
                 ray = targetCamera.ScreenPointToRay(Input.mousePosition);
+            }
+            else {
+                ray = posterCamera.ScreenPointToRay(Input.mousePosition);
             }
              
             RaycastHit hit;
@@ -37,6 +42,7 @@ public class PC : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Monitor"))
                 {   
                     isTargetCameraActive = true;
+                    isPosterCameraActive = false;
                     SwitchToTargetCamera();
                     worldSpaceCanvas.worldCamera = targetCamera;
                     ray = targetCamera.ScreenPointToRay(Input.mousePosition);
@@ -47,8 +53,18 @@ public class PC : MonoBehaviour
                     FlyerCanvas.enabled = true;
                     Debug.Log("FlyerCanvas active");
                     
+                } else if (hit.collider.gameObject.CompareTag("Poster")) {
+                    
+                    isTargetCameraActive = false;
+                    isPosterCameraActive = true;
+                    SwitchToPosterCamera();
+                    worldSpaceCanvas.worldCamera = posterCamera;
+                    ray = posterCamera.ScreenPointToRay(Input.mousePosition);
+                    Debug.Log("Switching to poster camera");
+                    
                 } else {   
                     isTargetCameraActive = false;
+                    isPosterCameraActive = false;
                     SwitchToCurrentCamera();
                     Debug.Log("Switching to current camera");
                     worldSpaceCanvas.worldCamera = currentCamera;
@@ -59,30 +75,28 @@ public class PC : MonoBehaviour
     }
 
     void SwitchToTargetCamera()
-    {
-        if (currentCamera != null)
-        {
-            currentCamera.gameObject.SetActive(false); 
-        }
+{
+    currentCamera.gameObject.SetActive(false); 
+    targetCamera.gameObject.SetActive(true); 
+    posterCamera.gameObject.SetActive(false);
+    worldSpaceCanvas.worldCamera = targetCamera; // Add here
+}
 
-        if (targetCamera != null)
-        {
-            targetCamera.gameObject.SetActive(true); 
-        }
-    }
+void SwitchToCurrentCamera()
+{
+    targetCamera.gameObject.SetActive(false); 
+    currentCamera.gameObject.SetActive(true); 
+    posterCamera.gameObject.SetActive(false);
+    worldSpaceCanvas.worldCamera = currentCamera; // Add here
+}
 
-    void SwitchToCurrentCamera()
-    {
-        if (targetCamera != null)
-        {
-            targetCamera.gameObject.SetActive(false); 
-        }
-
-        if (currentCamera != null)
-        {
-            currentCamera.gameObject.SetActive(true); 
-        }
-    }
+void SwitchToPosterCamera()
+{
+    targetCamera.gameObject.SetActive(false); 
+    currentCamera.gameObject.SetActive(false); 
+    posterCamera.gameObject.SetActive(true);
+    worldSpaceCanvas.worldCamera = posterCamera; // Add here
+}
 
     public void Button()
     {
