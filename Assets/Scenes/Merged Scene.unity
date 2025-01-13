@@ -2198,7 +2198,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 763320242}
     m_Modifications:
     - target: {fileID: 100000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_Name
@@ -2206,7 +2206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33175358
+      value: 0.33175355
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalScale.y
@@ -2214,19 +2214,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.33175358
+      value: 0.33175355
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.833
+      value: -17.13434
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.962
+      value: -0.122804046
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -118.167
+      value: 3.0577545
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2640,7 +2640,7 @@ GameObject:
   - component: {fileID: 214743822}
   m_Layer: 0
   m_Name: SSC Promo picture
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6201,6 +6201,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31052303, y: 0.014983356, z: 0.2026825}
   m_Center: {x: -0.01437521, y: 0.0018025339, z: -0.0017318726}
+--- !u!4 &535595678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
+  m_PrefabInstance: {fileID: 161081759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &538089768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7421,7 +7426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37794.855, y: 739.1182}
+  m_AnchoredPosition: {x: -39421.957, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -8317,6 +8322,7 @@ Transform:
   - {fileID: 814200102}
   - {fileID: 2087329646}
   - {fileID: 1894771980}
+  - {fileID: 535595678}
   m_Father: {fileID: 1904421722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763674241
@@ -15795,7 +15801,7 @@ GameObject:
   - component: {fileID: 1343337079}
   m_Layer: 0
   m_Name: Study advisor poster
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16061,7 +16067,7 @@ GameObject:
   - component: {fileID: 1415693737}
   m_Layer: 0
   m_Name: TU Delft is bad
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16145,7 +16151,7 @@ GameObject:
   - component: {fileID: 1432475086}
   m_Layer: 0
   m_Name: Totem promotion
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17081,8 +17087,8 @@ GameObject:
   - component: {fileID: 1526168859}
   - component: {fileID: 1526168858}
   m_Layer: 0
-  m_Name: Mug Camera
-  m_TagString: Untagged
+  m_Name: Poster Camera
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19987,7 +19993,7 @@ GameObject:
   - component: {fileID: 1784077034}
   m_Layer: 0
   m_Name: Poster board
-  m_TagString: Untagged
+  m_TagString: Poster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20011,8 +20017,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0180055, y: 1.0206002, z: 12.494469}
+  m_Center: {x: 0.002423975, y: 0.010300092, z: -5.7457213}
 --- !u!23 &1784077035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21273,10 +21279,12 @@ MonoBehaviour:
   - {fileID: 1711081223}
   targetCamera: {fileID: 2056095707}
   currentCamera: {fileID: 1269177838}
+  posterCamera: {fileID: 1526168859}
   worldSpaceCanvas: {fileID: 1933333069}
   personaManager: {fileID: 1179917787}
   FlyerCanvas: {fileID: 1205017057}
   isTargetCameraActive: 0
+  isPosterCameraActive: 0
 --- !u!114 &1933333067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22814,4 +22822,3 @@ SceneRoots:
   - {fileID: 174935190}
   - {fileID: 1044256324}
   - {fileID: 1784077037}
-  - {fileID: 161081759}
