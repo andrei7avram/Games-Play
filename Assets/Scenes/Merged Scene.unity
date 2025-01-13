@@ -3959,11 +3959,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      propertyPath: m_Name
+      value: Backpack2
+      objectReference: {fileID: 0}
     - target: {fileID: 8552847607074264487, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
       propertyPath: m_Name
       value: Backpack Person 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8552847607074264487, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3912415394753374811, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3973,6 +3982,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8552847607074264487, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
       insertIndex: -1
       addedObject: {fileID: 896729357}
+    - targetCorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789863290}
+    - targetCorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789863291}
   m_SourcePrefab: {fileID: 100100000, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
 --- !u!1 &356237492
 GameObject:
@@ -5854,6 +5869,32 @@ RectTransform:
   m_AnchoredPosition: {x: 3.6769, y: 30.8475}
   m_SizeDelta: {x: 432.1038, y: 23.5678}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &534651361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
+  m_PrefabInstance: {fileID: 1035694083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &534651365
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534651361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31052303, y: 0.014983356, z: 0.2026825}
+  m_Center: {x: -0.01437521, y: 0.0018025339, z: -0.0017318726}
 --- !u!1001 &538089768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7074,7 +7115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29505.496, y: 739.1182}
+  m_AnchoredPosition: {x: -31300, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -8320,6 +8361,45 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 6acfb5e43768a34478c923ba6536651d, type: 3}
   Audio: {fileID: 0}
+--- !u!1 &789863286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+  m_PrefabInstance: {fileID: 345650459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &789863290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789863286}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.023735771, y: 0.023626935, z: 0.024956563}
+  m_Center: {x: -0.00059933256, y: 0.001237112, z: -0.0009725215}
+--- !u!114 &789863291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789863286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95732c8656dab8c41b3489c279eb8f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myConversation: {fileID: 2112633389}
 --- !u!1 &789998988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5239277993684838431, guid: a5ac041b79f79364ca8481b503332787, type: 3}
@@ -8414,16 +8494,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Backpack Person 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8552847607074264487, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3912415394753374811, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8552847607074264487, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 805600877}
-    - targetCorrespondingSourceObject: {fileID: 8552847607074264487, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 805600876}
+    - targetCorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1294789308}
+    - targetCorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1294789309}
   m_SourcePrefab: {fileID: 100100000, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
 --- !u!4 &805600874 stripped
 Transform:
@@ -8448,19 +8536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   person: {fileID: 1405341679}
---- !u!114 &805600877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805600875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95732c8656dab8c41b3489c279eb8f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myConversation: {fileID: 380899450}
+  Backpack: {fileID: 1294789304}
 --- !u!4 &814200102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2743037689681575029, guid: a2e6444451e398844bfa41ba8f0ebfb2, type: 3}
@@ -10253,6 +10329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   person: {fileID: 309206183}
+  Backpack: {fileID: 789863286}
 --- !u!114 &896729358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11947,18 +12024,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 100010, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1035694088}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1035694087}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1035694086}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 534651365}
   m_SourcePrefab: {fileID: 100100000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
 --- !u!4 &1035694084 stripped
 Transform:
@@ -11996,27 +12074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   person: {fileID: 70349569}
---- !u!65 &1035694088
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035694085}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.31052303, y: 0.014983356, z: 0.2026825}
-  m_Center: {x: -0.01437521, y: 0.0018025339, z: -0.0017318726}
+  Backpack: {fileID: 534651361}
 --- !u!1 &1044256323
 GameObject:
   m_ObjectHideFlags: 0
@@ -12389,7 +12447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1078207608
 Transform:
   m_ObjectHideFlags: 0
@@ -14258,6 +14316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   person: {fileID: 1078207607}
+  Backpack: {fileID: 1249201695}
 --- !u!1 &1252923190
 GameObject:
   m_ObjectHideFlags: 0
@@ -14869,6 +14928,45 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1294789304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
+  m_PrefabInstance: {fileID: 805600873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1294789308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294789304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.023735771, y: 0.023626935, z: 0.024956563}
+  m_Center: {x: -0.00059933256, y: 0.001237112, z: -0.0009725215}
+--- !u!114 &1294789309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294789304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95732c8656dab8c41b3489c279eb8f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myConversation: {fileID: 380899450}
 --- !u!1 &1296991835
 GameObject:
   m_ObjectHideFlags: 0
@@ -21873,11 +21971,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":358.199921,"yPos":-38.8000336},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    is that pin on your bag?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":356.799927,"yPos":88.00046},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":95,"yPos":126.000015},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    is that pin on your bag?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":93.6000061,"yPos":252.8005},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It
     is something I received for donating my blood.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Sacha
-    Jonkers","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":353.5999,"yPos":215.2006},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Is
-    this something you find important?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":353.6,"yPos":339.2},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Indeed,
+    Jonkers","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":90.3999939,"yPos":380.0006},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Is
+    this something you find important?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":90.4000854,"yPos":504.000366},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Indeed,
     because it saves lives. My mother, who is a doctor, says it is one of the most
     selfless acts someone can do.","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Sacha
     Jonkers","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
