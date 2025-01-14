@@ -17,6 +17,8 @@ public class PC : MonoBehaviour
 
     public Canvas FlyerCanvas;
 
+    public GameObject dialogueBox;
+
     Ray ray;
 
     public bool isTargetCameraActive = false;
@@ -50,7 +52,7 @@ public class PC : MonoBehaviour
                     ray = targetCamera.ScreenPointToRay(Input.mousePosition);
                     Debug.Log("Switching to target camera");
                    
-                }else if (hit.collider.gameObject.CompareTag("Flyers")) {
+                }else if (hit.collider.gameObject.CompareTag("Flyers") && dialogueBox.activeSelf == false) {
                     
                     FlyerCanvas.enabled = true;
                     Debug.Log("FlyerCanvas active");

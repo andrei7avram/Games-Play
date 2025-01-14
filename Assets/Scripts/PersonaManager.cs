@@ -14,6 +14,8 @@ public class PersonaManager : MonoBehaviour
 
     public PersonaScript levelCreator;
 
+    public int currentlevel = 1;
+
     private bool bell = false;
 
     public UnityEngine.UI.Image bioTab;
@@ -286,7 +288,7 @@ public class PersonaManager : MonoBehaviour
 
         foreach (var kvp in PersonaDictionary)
         {
-            if (kvp.Value == 2)
+            if (kvp.Value != 6)
             {
                 keysToRemove.Add(kvp.Key);
             }
@@ -314,13 +316,12 @@ public class PersonaManager : MonoBehaviour
         ClearPersonas();
         starRenderer.starIndex = 0;
         NextLevel();
-        //IncrementCurrentPersona();
-        //DisplayCurrentPersona();
+        IncrementCurrentPersona();
+        DisplayCurrentPersona();
         FinalScoreCanvas.gameObject.SetActive(false);
     }
 
     public void NextLevel(){
-        int currentlevel = 1;
         currentlevel++;
         levelCreator.Level(currentlevel);
     }
