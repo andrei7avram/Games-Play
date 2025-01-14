@@ -18,7 +18,8 @@ public class LevelLoader : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            LoadNextLevel();
+            //LoadNextLevel();
+            transition.SetTrigger("Start");
         }
     }
 
@@ -36,6 +37,6 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(levelIndex);
+        //SceneManager.LoadScene(levelIndex);
     }
 }

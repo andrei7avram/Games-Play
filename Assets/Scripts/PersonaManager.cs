@@ -14,6 +14,8 @@ public class PersonaManager : MonoBehaviour
 
     public PersonaScript levelCreator;
 
+    public Animator transition;
+
     public int currentlevel = 1;
 
     private bool bell = false;
@@ -53,7 +55,7 @@ public class PersonaManager : MonoBehaviour
 
     public int finalScore = 0;
 
-    public String selectedCourse;
+    public String selectedCourse = "";
 
     public StarRenderer starRenderer;
 
@@ -250,8 +252,8 @@ public class PersonaManager : MonoBehaviour
                 PersonaDictionary[currentPersona] =  2;
                 finalScore += 2;
                 Debug.Log(finalScore);
-                IncrementCurrentPersona();
-                DisplayCurrentPersona();
+                //IncrementCurrentPersona();
+                //DisplayCurrentPersona();
                 if (isLevelComplete)
                 {
                     FinishLevel();
@@ -262,8 +264,8 @@ public class PersonaManager : MonoBehaviour
                 PersonaDictionary[currentPersona] =  1;
                 finalScore += 1;
                 Debug.Log(finalScore);
-                IncrementCurrentPersona();
-                DisplayCurrentPersona();
+                //IncrementCurrentPersona();
+                //DisplayCurrentPersona();
                 if (isLevelComplete)
                 {
                     FinishLevel();
@@ -273,8 +275,8 @@ public class PersonaManager : MonoBehaviour
                 Debug.Log("Incorrect");
                 PersonaDictionary[currentPersona] =  0;
                 Debug.Log(finalScore);
-                IncrementCurrentPersona();
-                DisplayCurrentPersona();
+                //IncrementCurrentPersona();
+                //DisplayCurrentPersona();
                 if (isLevelComplete)
                 {
                     FinishLevel();
@@ -327,11 +329,19 @@ public class PersonaManager : MonoBehaviour
     }
 
     public void bellIncrement() {
-       
-        if (bell == false) {
-            bell = true;
+        
+        if(currentPersona.Attributes.Name == null || !string.IsNullOrEmpty(selectedCourse)) {
+            Debug.Log(currentPersona.Attributes.Name == null);
+            transition.SetTrigger("Start");
             IncrementCurrentPersona();
             DisplayCurrentPersona();
+            selectedCourse = "";
+            if (isLevelComplete)
+            {
+                FinishLevel();
+            }
+        } else {
+            Debug.Log("Please select a course");
         }
     }
 }
