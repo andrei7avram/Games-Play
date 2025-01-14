@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PersonaManager : MonoBehaviour
 {
@@ -12,14 +13,33 @@ public class PersonaManager : MonoBehaviour
     public static Dictionary<PersonaScript, int> PersonaDictionary = new Dictionary<PersonaScript, int>();
 
     public PersonaScript levelCreator;
+
+    private bool bell = false;
+
+    public UnityEngine.UI.Image bioTab;
     public GameObject person1;
+    public Sprite bio1;
     public GameObject person2;
+    public Sprite bio2;
+    
     public GameObject person3;
+    public Sprite bio3;
+    
     public GameObject person4;
+    public Sprite bio4;
+    
     public GameObject person5;
+    public Sprite bio5;
+    
     public GameObject person6;
+    public Sprite bio6;
+    
     public GameObject person7;
+    public Sprite bio7;
+    
     public GameObject person8;
+    public Sprite bio8;
+    
 
     public bool isLevelComplete = false;
     public PersonaScript currentPersona;
@@ -94,20 +114,28 @@ public class PersonaManager : MonoBehaviour
         
         if (currentPersona.Attributes.Name == "Person1") {
             person1.SetActive(true); 
+            bioTab.sprite = bio1;
         } else if (currentPersona.Attributes.Name == "Person2") {
             person2.SetActive(true); 
+            bioTab.sprite = bio2;
         } else if (currentPersona.Attributes.Name == "Person3") {
             person3.SetActive(true); 
+            bioTab.sprite = bio3;
         } else if (currentPersona.Attributes.Name == "Person4") {
             person4.SetActive(true); 
+            bioTab.sprite = bio4;
         } else if (currentPersona.Attributes.Name == "Person5") {
             person5.SetActive(true); 
+            bioTab.sprite = bio5;
         } else if (currentPersona.Attributes.Name == "Person6") {
             person6.SetActive(true); 
+            bioTab.sprite = bio6;
         } else if (currentPersona.Attributes.Name == "Person7") {
             person7.SetActive(true); 
+            bioTab.sprite = bio7;
         } else if (currentPersona.Attributes.Name == "Person8") {
             person8.SetActive(true); 
+            bioTab.sprite = bio8;
         }
 
 
@@ -286,8 +314,8 @@ public class PersonaManager : MonoBehaviour
         ClearPersonas();
         starRenderer.starIndex = 0;
         NextLevel();
-        IncrementCurrentPersona();
-        DisplayCurrentPersona();
+        //IncrementCurrentPersona();
+        //DisplayCurrentPersona();
         FinalScoreCanvas.gameObject.SetActive(false);
     }
 
@@ -295,6 +323,15 @@ public class PersonaManager : MonoBehaviour
         int currentlevel = 1;
         currentlevel++;
         levelCreator.Level(currentlevel);
+    }
+
+    public void bellIncrement() {
+       
+        if (bell == false) {
+            bell = true;
+            IncrementCurrentPersona();
+            DisplayCurrentPersona();
+        }
     }
 }
 

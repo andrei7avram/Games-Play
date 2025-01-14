@@ -13,6 +13,8 @@ public class PC : MonoBehaviour
     public Canvas worldSpaceCanvas;
     public PersonaManager personaManager;
 
+    public AudioClip bellSound;
+
     public Canvas FlyerCanvas;
 
     Ray ray;
@@ -53,7 +55,13 @@ public class PC : MonoBehaviour
                     FlyerCanvas.enabled = true;
                     Debug.Log("FlyerCanvas active");
                     
-                } else if (hit.collider.gameObject.CompareTag("Poster")) {
+                }else if (hit.collider.gameObject.CompareTag("Bell")) {
+                    personaManager.bellIncrement();
+                    GetComponent<AudioSource>().PlayOneShot(bellSound);
+
+
+                }
+                 else if (hit.collider.gameObject.CompareTag("Poster")) {
                     
                     isTargetCameraActive = false;
                     isPosterCameraActive = true;

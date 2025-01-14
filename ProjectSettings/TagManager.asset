@@ -20,6 +20,7 @@ TagManager:
   - Psychology
   - Flyers
   - Poster
+  - Bell
   layers:
   - Default
   - TransparentFX
