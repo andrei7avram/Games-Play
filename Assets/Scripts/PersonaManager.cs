@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using DialogueEditor;
 
 public class PersonaManager : MonoBehaviour
 {
@@ -60,6 +61,16 @@ public class PersonaManager : MonoBehaviour
     public StarRenderer starRenderer;
 
     public List<TextMeshProUGUI> textMeshProObjects;
+
+    public NPCConversation ConversationPerson1;
+    public NPCConversation ConversationPerson2;
+    public NPCConversation ConversationPerson3;
+    public NPCConversation ConversationPerson4;
+    public NPCConversation ConversationPerson5;
+    public NPCConversation ConversationPerson6;
+    public NPCConversation ConversationPerson7;
+    public NPCConversation ConversationPerson8;
+
     public static void PopulateDictionary()
     {
         int value = 0;
@@ -189,58 +200,102 @@ public class PersonaManager : MonoBehaviour
         textMeshProObjects[6].text = "Background: " + currentPersona.Background;
     }
 
+    public void FinalDialogue()
+    {
+        if (currentPersona.Attributes.Name == "Person1")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson1);
+        }
+        if (currentPersona.Attributes.Name == "Person2")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson2);
+        }
+        if (currentPersona.Attributes.Name == "Person3")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson3);
+        }
+        if (currentPersona.Attributes.Name == "Person4")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson4);
+        }
+        if (currentPersona.Attributes.Name == "Person5")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson5);
+        }
+        if (currentPersona.Attributes.Name == "Person6")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson6);
+        }
+        if (currentPersona.Attributes.Name == "Person7")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson7);
+        }
+        if (currentPersona.Attributes.Name == "Person8")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson8);
+        }
+    }
     public void SetSelectedCourseCSE()
     {
         selectedCourse = "CSE";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCoursePhysics()
     {
         selectedCourse = "Physics";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCourseIndustrial()
     {
         selectedCourse = "Industrial";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCourseArchitecture()
     {
         selectedCourse = "Architecture";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCourseMedical()
     {
         selectedCourse = "Medical";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCourseElectrical()
     {
         selectedCourse = "Electrical";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCourseChemistry()
     {
         selectedCourse = "Chemistry";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCourseSustainable()
     {
         selectedCourse = "Sustainable";
         evaluateAnswer();
+        FinalDialogue();
     }
 
     public void SetSelectedCoursePsychology()
     {
         selectedCourse = "Psychology";
         evaluateAnswer();
+        FinalDialogue();
     }
 
 
