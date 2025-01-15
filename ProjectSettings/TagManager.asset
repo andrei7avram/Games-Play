@@ -21,6 +21,7 @@ TagManager:
   - Flyers
   - Poster
   - Bell
+  - Bio
   layers:
   - Default
   - TransparentFX

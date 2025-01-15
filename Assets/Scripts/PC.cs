@@ -26,6 +26,7 @@ public class PC : MonoBehaviour
 
     public void Update()
     {
+        RaycastHit hit;
         if (Input.GetMouseButtonDown(0) && !personaManager.isLevelComplete) 
         {
             if (!isTargetCameraActive && !isPosterCameraActive) {
@@ -37,7 +38,7 @@ public class PC : MonoBehaviour
                 ray = posterCamera.ScreenPointToRay(Input.mousePosition);
             }
              
-            RaycastHit hit;
+            
             Debug.DrawRay(ray.origin, ray.direction * 1000000, Color.red, 2f);
 
             if (Physics.Raycast(ray, out hit))
@@ -72,7 +73,11 @@ public class PC : MonoBehaviour
                     ray = posterCamera.ScreenPointToRay(Input.mousePosition);
                     Debug.Log("Switching to poster camera");
                     
-                } else {   
+                } else if (hit.collider.gameObject.CompareTag("Bio"))
+                { 
+                    Debug.Log("Bio clicked");
+                }
+                 else {   
                     isTargetCameraActive = false;
                     isPosterCameraActive = false;
                     SwitchToCurrentCamera();
