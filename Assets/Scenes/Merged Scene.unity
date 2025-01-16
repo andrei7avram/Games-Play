@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 70349573}
   - component: {fileID: 70349572}
   m_Layer: 0
-  m_Name: Person7
+  m_Name: Person8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4bcb06e378bfc40bba4981ba3f0126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Is there any field you are leaning towards?
+  message: Wow, she sure has a lot of books on human anatomy!
 --- !u!1001 &109093725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6492,7 +6492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4bcb06e378bfc40bba4981ba3f0126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: I see you have been busy during dutch design week.
+  message: He has stickers on his laptop from the Dutch Design Week, an annual event
+    in Eindhoven that features cool new concepts, inventions, and designs. Maybe
+    he's been there?
 --- !u!4 &535595678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
@@ -7970,7 +7972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14014.801, y: 739.1182}
+  m_AnchoredPosition: {x: -19522.646, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -8542,7 +8544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4bcb06e378bfc40bba4981ba3f0126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: A banana from mom
+  message: A banana from mom... I probably shouldn't ask a question about that
 --- !u!1 &719035542
 GameObject:
   m_ObjectHideFlags: 0
@@ -10004,7 +10006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4bcb06e378bfc40bba4981ba3f0126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: What is this?
+  message: There is something attached to his backback? Is that a sport team logo?
 --- !u!4 &814200102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2743037689681575029, guid: a2e6444451e398844bfa41ba8f0ebfb2, type: 3}
@@ -10276,7 +10278,7 @@ Transform:
   m_GameObject: {fileID: 830815583}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.42550507, z: -0, w: 0.90495604}
-  m_LocalPosition: {x: -17.06, y: -0.361, z: 4.513}
+  m_LocalPosition: {x: -17.183, y: -0.361, z: 4.663}
   m_LocalScale: {x: 0.39434355, y: 0.39434355, z: 0.39434355}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11911,7 +11913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4bcb06e378bfc40bba4981ba3f0126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: What is that pin on your bag?
+  message: There seems the be a pin on her backpack, maybe this signifies something
+    is important to her?
 --- !u!1 &910917569
 GameObject:
   m_ObjectHideFlags: 0
@@ -14185,7 +14188,7 @@ GameObject:
   - component: {fileID: 1078207611}
   - component: {fileID: 1078207610}
   m_Layer: 0
-  m_Name: Person5 First Time
+  m_Name: Person5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15760,10 +15763,12 @@ MonoBehaviour:
   bio5: {fileID: 21300000, guid: f7fff6dc47cc0f843ba8c4e80e4591cc, type: 3}
   person6: {fileID: 539876611}
   bio6: {fileID: 21300000, guid: e622ee22191ef7a4d9dadc7323cb809b, type: 3}
-  person7: {fileID: 70349569}
-  bio7: {fileID: 21300000, guid: 54d164ce8841c45448bd48cbe534ed0a, type: 3}
-  person8: {fileID: 1298915319}
-  bio8: {fileID: 21300000, guid: 8bfebfa5a2607c6449686c208c472839, type: 3}
+  person7: {fileID: 1918338381}
+  bio7: {fileID: 21300000, guid: aa81cfbecf26dd24481ded7f5d52809f, type: 3}
+  person8: {fileID: 70349569}
+  bio8: {fileID: 21300000, guid: 54d164ce8841c45448bd48cbe534ed0a, type: 3}
+  person9: {fileID: 1298915319}
+  bio9: {fileID: 21300000, guid: 8bfebfa5a2607c6449686c208c472839, type: 3}
   isLevelComplete: 0
   currentPersona: {fileID: 1179917788}
   FinalScoreCanvas: {fileID: 433825688}
@@ -15785,8 +15790,9 @@ MonoBehaviour:
   ConversationPerson4: {fileID: 0}
   ConversationPerson5: {fileID: 318744027}
   ConversationPerson6: {fileID: 400992804}
-  ConversationPerson7: {fileID: 1763702278}
-  ConversationPerson8: {fileID: 969889465}
+  ConversationPerson7: {fileID: 318744027}
+  ConversationPerson8: {fileID: 1763702278}
+  ConversationPerson9: {fileID: 969889465}
 --- !u!114 &1179917788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16696,7 +16702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4bcb06e378bfc40bba4981ba3f0126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: A deck of play cards?
+  message: Lisa brought a deck of cards with her. Maybe she's up for a game?
 --- !u!1 &1252923190
 GameObject:
   m_ObjectHideFlags: 0
@@ -17672,7 +17678,7 @@ GameObject:
   - component: {fileID: 1298915323}
   - component: {fileID: 1298915322}
   m_Layer: 0
-  m_Name: Person8
+  m_Name: Person9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24157,7 +24163,7 @@ GameObject:
   - component: {fileID: 1918338384}
   - component: {fileID: 1918338383}
   m_Layer: 0
-  m_Name: Person5 Second Time
+  m_Name: Person7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24333,7 +24339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 829e9536fda0ebc48a939c47381e11f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.00934
+      value: -17.078
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 829e9536fda0ebc48a939c47381e11f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -24341,7 +24347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 829e9536fda0ebc48a939c47381e11f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.272751
+      value: 4.353
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 829e9536fda0ebc48a939c47381e11f9, type: 3}
       propertyPath: m_LocalRotation.w

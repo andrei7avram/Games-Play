@@ -44,6 +44,9 @@ public class PersonaManager : MonoBehaviour
     
     public GameObject person8;
     public Sprite bio8;
+
+    public GameObject person9;
+    public Sprite bio9;
     
 
     public bool isLevelComplete = false;
@@ -70,6 +73,7 @@ public class PersonaManager : MonoBehaviour
     public NPCConversation ConversationPerson6;
     public NPCConversation ConversationPerson7;
     public NPCConversation ConversationPerson8;
+    public NPCConversation ConversationPerson9;
 
     public static void PopulateDictionary()
     {
@@ -92,7 +96,7 @@ public class PersonaManager : MonoBehaviour
 
     void Update()
     {   
-        
+        /*
         if (Input.GetKeyDown(KeyCode.D))
         {
             DisplayAllPersonas();
@@ -105,6 +109,7 @@ public class PersonaManager : MonoBehaviour
         }else if (Input.GetKeyDown(KeyCode.E)) {
             PopulateDictionary();
         }
+        */
     }
 
     public void DisplayAllPersonas()
@@ -151,6 +156,9 @@ public class PersonaManager : MonoBehaviour
         } else if (currentPersona.Attributes.Name == "Person8") {
             person8.SetActive(true); 
             bioTab.sprite = bio8;
+        } else if (currentPersona.Attributes.Name == "Person9") {
+            person9.SetActive(true); 
+            bioTab.sprite = bio9;
         }
 
 
@@ -167,6 +175,7 @@ public class PersonaManager : MonoBehaviour
         person6.SetActive(false);
         person7.SetActive(false);
         person8.SetActive(false);
+        person9.SetActive(false);
     }
 
     public PersonaScript IncrementCurrentPersona()
@@ -233,6 +242,10 @@ public class PersonaManager : MonoBehaviour
         if (currentPersona.Attributes.Name == "Person8")
         {
             ConversationManager.Instance.StartConversation(ConversationPerson8);
+        }
+        if (currentPersona.Attributes.Name == "Person9")
+        {
+            ConversationManager.Instance.StartConversation(ConversationPerson9);
         }
     }
     public void SetSelectedCourseCSE()
