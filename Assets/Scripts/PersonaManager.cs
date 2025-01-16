@@ -63,8 +63,13 @@ public class PersonaManager : MonoBehaviour
 
     public StarRenderer starRenderer;
 
-    public List<TextMeshProUGUI> textMeshProObjects;
+    //public List<TextMeshProUGUI> textMeshProObjects;
 
+
+    public GameObject bioButton1;
+    public GameObject bioButton2;
+    public GameObject bioButton3;
+    public GameObject bioButton4;
     public NPCConversation ConversationPerson1;
     public NPCConversation ConversationPerson2;
     public NPCConversation ConversationPerson3;
@@ -135,24 +140,38 @@ public class PersonaManager : MonoBehaviour
         if (currentPersona.Attributes.Name == "Person1") {
             person1.SetActive(true); 
             bioTab.sprite = bio1;
+            
         } else if (currentPersona.Attributes.Name == "Person2") {
             person2.SetActive(true); 
             bioTab.sprite = bio2;
+            
         } else if (currentPersona.Attributes.Name == "Person3") {
             person3.SetActive(true); 
             bioTab.sprite = bio3;
+            
         } else if (currentPersona.Attributes.Name == "Person4") {
             person4.SetActive(true); 
             bioTab.sprite = bio4;
+            bioButton1.SetActive(true);
+            
         } else if (currentPersona.Attributes.Name == "Person5") {
             person5.SetActive(true); 
             bioTab.sprite = bio5;
+            bioButton2.SetActive(true);
+            bioButton1.SetActive(false);
+            bioButton3.SetActive(true);
+            
         } else if (currentPersona.Attributes.Name == "Person6") {
             person6.SetActive(true); 
             bioTab.sprite = bio6;
+            bioButton2.SetActive(false);
+            bioButton3.SetActive(false);
+            bioButton1.SetActive(false);
+            
         } else if (currentPersona.Attributes.Name == "Person7") {
             person7.SetActive(true); 
             bioTab.sprite = bio7;
+            bioButton4.SetActive(true);
         } else if (currentPersona.Attributes.Name == "Person8") {
             person8.SetActive(true); 
             bioTab.sprite = bio8;
@@ -162,8 +181,9 @@ public class PersonaManager : MonoBehaviour
         }
 
 
-        UpdateTextMeshProObjects();
+        //UpdateTextMeshProObjects();
     }
+
 
     public void SetAllPersonInactive() // This functions will set all personas inactive
     {
@@ -198,7 +218,7 @@ public class PersonaManager : MonoBehaviour
         return currentPersona;
     }
 
-    public void UpdateTextMeshProObjects()
+    /*public void UpdateTextMeshProObjects()
     {
         textMeshProObjects[0].text = "Name: " + currentPersona.Attributes.Name;
         textMeshProObjects[1].text = "Age: " + currentPersona.Attributes.Age.ToString();
@@ -207,7 +227,7 @@ public class PersonaManager : MonoBehaviour
         textMeshProObjects[4].text = "Awards: " + string.Join(", ", currentPersona.Attributes.Awards);
         textMeshProObjects[5].text = "Hobbies: " + string.Join(", ", currentPersona.Attributes.Hobbies);
         textMeshProObjects[6].text = "Background: " + currentPersona.Background;
-    }
+    }*/
 
     public void FinalDialogue()
     {

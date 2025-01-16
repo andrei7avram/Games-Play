@@ -22,4 +22,9 @@ public class Conversation : MonoBehaviour
     {
         ConversationManager.Instance.StartConversation(myConversation);
     }
+
+    public void BioTrigger()
+    {
+        ConversationManager.Instance.StartConversation(myConversation);
+    }
 }
