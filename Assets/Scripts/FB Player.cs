@@ -13,11 +13,13 @@ public class Player : MonoBehaviour
     //Player state.
     public bool isDead = false;
     private bool isPlayerEnabled = false;
+    private AudioSource WingFlap;
 
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         DisablePlayer(); // Disable player physics and controls at the start.
+        WingFlap = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             playerRigidbody.velocity = Vector2.up * velocity;
+            WingFlap.Play();
         }
     }
 

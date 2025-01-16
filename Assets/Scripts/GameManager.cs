@@ -7,10 +7,15 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Vector3 playerStartPosition = new Vector3(0, 0, 0); // Desired reset position for the player.
     public bool isPaused = true; // Game starts paused.
+    private AudioSource WingFlap;
+    private AudioSource GameLoss;
 
     void Start()
     {
         PauseGame(); // Start with the game paused.
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        WingFlap = audioSources[0];
+        GameLoss = audioSources[1]; 
     }
 
     private void Update()
@@ -23,6 +28,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isPaused)
         {
             StartGame();
+            WingFlap.Play();
         }
     }
 
@@ -34,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        GameLoss.Play();
         PauseGame(); // Pause the game when the player dies.
     }
 
