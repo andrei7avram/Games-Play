@@ -76,7 +76,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona = new PersonaScript(
-            "Some background information", new string[] { "Math", "CSE" },
+            "Some background information", new string[] { "Physics", "Chemistry" },
             exampleAttributes
             );
 
@@ -92,7 +92,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript persona1 = new PersonaScript(
-            "TU/Eindhoven", new string[] { "Industrial", "Math" },
+            "TU/Eindhoven", new string[] { "Medical", "Psychology" },
             attributes1
             );
 
@@ -108,7 +108,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona3 = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "Psychology", "CSE" },
             exampleAttributes3
             );
 
@@ -127,7 +127,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona1 = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "Architecture", "Sustainable" },
             exampleAttributes1
             );
 
@@ -143,7 +143,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona2 = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "CSE", "Electrical" },
             exampleAttributes2
             );
 
@@ -159,7 +159,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona4 = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "Electrical", "Industrial Design" },
             exampleAttributes4
             );
             PersonaManager.Personas.Add(examplePersona4);
@@ -176,7 +176,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona5 = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "Electrical", "Industrial" },
             exampleAttributes5
             );
 
@@ -192,7 +192,7 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona6 = new PersonaScript(
-            "Some background information", new string[] { "CSE", "Math" },
+            "Some background information", new string[] { "Industrial", "Physics" },
             exampleAttributes6
             );
 
