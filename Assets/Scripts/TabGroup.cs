@@ -12,6 +12,14 @@ public class TabGroup : MonoBehaviour
     public TabButton selectedTab;
     public List<GameObject> objectsToSwap;
 
+void Start() {
+    if (objectsToSwap.Count > 0 && tabButtons.Count > 0)
+    {
+        selectedTab = tabButtons[1]; // Set the first tab as the default selected tab
+        OnTabSelected(selectedTab);  // Use the existing method to activate the appropriate object
+    }
+}
+
     public void Subscribe(TabButton button)
     {
         if (tabButtons == null)

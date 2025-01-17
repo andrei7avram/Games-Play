@@ -37,24 +37,24 @@ public class TextureSwitcher : MonoBehaviour
 
     void Update()
     {
-        // Check for left arrow key input
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            currentIndex--;
-            if (currentIndex < 0)
-                currentIndex = textures.Length - 1;
-            rend.material.mainTexture = textures[currentIndex];
-            rend.material.SetTexture("_EmissionMap", textures[currentIndex]);
-        }
+    // Check for left navigation: Left Arrow, A, or Left Mouse Click
+    if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetMouseButtonDown(0))
+    {
+        currentIndex--;
+        if (currentIndex < 0)
+            currentIndex = textures.Length - 1;
+        rend.material.mainTexture = textures[currentIndex];
+        rend.material.SetTexture("_EmissionMap", textures[currentIndex]);
+    }
 
-        // Check for right arrow key input
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            currentIndex++;
-            if (currentIndex >= textures.Length)
-                currentIndex = 0;
-            rend.material.mainTexture = textures[currentIndex];
-            rend.material.SetTexture("_EmissionMap", textures[currentIndex]);
-        }
+    // Check for right navigation: Right Arrow, D, Spacebar, or Right Mouse Click
+    if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D) || Input.GetMouseButtonDown(1))
+    {
+        currentIndex++;
+        if (currentIndex >= textures.Length)
+            currentIndex = 0;
+        rend.material.mainTexture = textures[currentIndex];
+        rend.material.SetTexture("_EmissionMap", textures[currentIndex]);
+    }
     }
 }
