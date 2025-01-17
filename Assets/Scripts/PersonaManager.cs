@@ -70,6 +70,8 @@ public class PersonaManager : MonoBehaviour
     public GameObject bioButton2;
     public GameObject bioButton3;
     public GameObject bioButton4;
+
+    public GameObject bioButton5;
     public NPCConversation ConversationPerson1;
     public NPCConversation ConversationPerson2;
     public NPCConversation ConversationPerson3;
@@ -172,9 +174,12 @@ public class PersonaManager : MonoBehaviour
             person7.SetActive(true); 
             bioTab.sprite = bio7;
             bioButton4.SetActive(true);
+            bioButton5.SetActive(true);
         } else if (currentPersona.Attributes.Name == "Person8") {
             person8.SetActive(true); 
             bioTab.sprite = bio8;
+            bioButton4.SetActive(false);
+            bioButton5.SetActive(false);
         } else if (currentPersona.Attributes.Name == "Person9") {
             person9.SetActive(true); 
             bioTab.sprite = bio9;
@@ -333,8 +338,19 @@ public class PersonaManager : MonoBehaviour
 
 
     public void evaluateAnswer()
-    {  
-            if (currentPersona.correctAnswers[0] == selectedCourse)
+    {       
+        if (currentPersona.Attributes.Name == "Person9"){
+                Debug.Log("Correct");
+                PersonaDictionary[currentPersona] =  2;
+                finalScore += 2;
+                Debug.Log(finalScore);
+                //IncrementCurrentPersona();
+                //DisplayCurrentPersona();
+                if (isLevelComplete)
+                {
+                    FinishLevel();
+                }
+            } else if (currentPersona.correctAnswers[0] == selectedCourse)
             {
                 Debug.Log("Correct");
                 PersonaDictionary[currentPersona] =  2;
