@@ -6,6 +6,11 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using DialogueEditor;
+using Image = UnityEngine.UI.Image;
+using System.Runtime.InteropServices.WindowsRuntime;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class PersonaManager : MonoBehaviour
 {
@@ -15,7 +20,18 @@ public class PersonaManager : MonoBehaviour
 
     public PersonaScript levelCreator;
 
+    public bool count = false;
+
+    public GameObject finalScreen;
     public Animator transition;
+
+    public Sprite emailtab1;
+    
+    public Sprite emailtab2;
+
+    public Sprite emailtab3;
+
+    public Image emailTab;
 
     public int currentlevel = 1;
 
@@ -129,60 +145,68 @@ public class PersonaManager : MonoBehaviour
         }
     }
 
+    private IEnumerator SetActiveAfterDelay(GameObject obj, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        obj.SetActive(true);
+    }
+
     public void DisplayCurrentPersona()
     {
-        SetAllPersonInactive();
+        StartCoroutine(SetAllPersonInactive());
         Debug.Log("Name: " + currentPersona.Attributes.Name);
-        //Debug.Log("Age: " + currentPersona.Attributes.Age);
-        //Debug.Log("Country: " + currentPersona.Attributes.Country);
-        //Debug.Log("HighSchool: " + currentPersona.Attributes.HighSchool);
-        //Debug.Log("Awards: " + string.Join(", ", currentPersona.Attributes.Awards));
-        //Debug.Log("Hobbies: " + string.Join(", ", currentPersona.Attributes.Hobbies));
-        //Debug.Log("Background: " + currentPersona.Background);
         
         if (currentPersona.Attributes.Name == "Person1") {
-            person1.SetActive(true); 
+            StartCoroutine(SetActiveAfterDelay(person1, 1f));
             bioTab.sprite = bio1;
             
         } else if (currentPersona.Attributes.Name == "Person2") {
-            person2.SetActive(true); 
+            StartCoroutine(SetActiveAfterDelay(person2, 1f));
             bioTab.sprite = bio2;
             
-        } else if (currentPersona.Attributes.Name == "Person3") {
-            person3.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person3" && count == false) {
+            StartCoroutine(SetActiveAfterDelay(person3, 0.3f));
             bioTab.sprite = bio3;
+            Debug.Log("PPPPPPPPPPPPPPPPPPPPPPPP");
+            count = true;
             
         } else if (currentPersona.Attributes.Name == "Person4") {
-            person4.SetActive(true); 
+            person3.SetActive(false);
+            Debug.Log("LLLLLLLLLL");
+            person4.SetActive(true);
             bioTab.sprite = bio4;
+            count = false;
             bioButton1.SetActive(true);
             
         } else if (currentPersona.Attributes.Name == "Person5") {
-            person5.SetActive(true); 
+            StartCoroutine(SetActiveAfterDelay(person5, 1f)); 
             bioTab.sprite = bio5;
             bioButton2.SetActive(true);
             bioButton1.SetActive(false);
             bioButton3.SetActive(true);
             
-        } else if (currentPersona.Attributes.Name == "Person6") {
-            person6.SetActive(true); 
+        } else if (currentPersona.Attributes.Name == "Person6"  && count == false) {
+            StartCoroutine(SetActiveAfterDelay(person6, 0.4f)); 
             bioTab.sprite = bio6;
+            count = true;
             bioButton2.SetActive(false);
             bioButton3.SetActive(false);
             bioButton1.SetActive(false);
             
         } else if (currentPersona.Attributes.Name == "Person7") {
+            person6.SetActive(false);
             person7.SetActive(true); 
+            count = false;
             bioTab.sprite = bio7;
             bioButton4.SetActive(true);
             bioButton5.SetActive(true);
         } else if (currentPersona.Attributes.Name == "Person8") {
-            person8.SetActive(true); 
+            StartCoroutine(SetActiveAfterDelay(person8, 1f)); 
             bioTab.sprite = bio8;
             bioButton4.SetActive(false);
             bioButton5.SetActive(false);
         } else if (currentPersona.Attributes.Name == "Person9") {
-            person9.SetActive(true); 
+            StartCoroutine(SetActiveAfterDelay(person9, 1f)); 
             bioTab.sprite = bio9;
         }
 
@@ -191,17 +215,37 @@ public class PersonaManager : MonoBehaviour
     }
 
 
-    public void SetAllPersonInactive() // This functions will set all personas inactive
-    {
-        person1.SetActive(false);
-        person2.SetActive(false);
-        person3.SetActive(false);
-        person4.SetActive(false);
-        person5.SetActive(false);
-        person6.SetActive(false);
-        person7.SetActive(false);
-        person8.SetActive(false);
-        person9.SetActive(false);
+    private IEnumerator SetAllPersonInactive() // This functions will set all personas inactive
+    {   
+        if(currentPersona.Attributes.Name == "Person4" || currentPersona.Attributes.Name == "Person7") {
+            yield return null;
+            person3.SetActive(false);
+            person6.SetActive(false);
+            Debug.Log("Inactiveeeeeeeee");
+        }else if ((currentPersona.Attributes.Name == "Person3" || currentPersona.Attributes.Name == "Person6") && count == true) {
+            yield return null;
+            person1.SetActive(false);
+            person2.SetActive(false);
+            person3.SetActive(false);
+            person4.SetActive(false);
+            person5.SetActive(false);
+            person6.SetActive(false);
+            person7.SetActive(false);
+            person8.SetActive(false);
+            person9.SetActive(false);
+            Debug.Log("Between");
+        } else {
+            Debug.Log("In- Start");
+            yield return new WaitForSeconds(0.4f);
+            person1.SetActive(false);
+            person2.SetActive(false);
+            person4.SetActive(false);
+            person5.SetActive(false);
+            person7.SetActive(false);
+            person8.SetActive(false);
+            person9.SetActive(false);
+            Debug.Log("In- End");
+        }
     }
 
     public PersonaScript IncrementCurrentPersona()
@@ -423,16 +467,34 @@ public class PersonaManager : MonoBehaviour
 
     public void Increment() {
         ClearPersonas();
+        if(currentlevel == 3) {
+            finalScreen.gameObject.SetActive(true);
+            FinalScoreCanvas.gameObject.SetActive(false);
+        } else {
+        
         starRenderer.starIndex = 0;
         NextLevel();
         IncrementCurrentPersona();
         DisplayCurrentPersona();
         FinalScoreCanvas.gameObject.SetActive(false);
+        //transition.SetTrigger("End");
+        }
+    }
+
+    public void Return(){
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void NextLevel(){
+
         currentlevel++;
+        if(currentlevel == 2) {
+            emailTab.sprite = emailtab2;
+        } else if(currentlevel == 3) {
+            emailTab.sprite = emailtab3;
+        } 
         levelCreator.Level(currentlevel);
+        
     }
 
     public void bellIncrement() {

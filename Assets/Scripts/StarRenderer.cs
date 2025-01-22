@@ -26,7 +26,6 @@ public class StarRenderer : MonoBehaviour
     {
 
        foreach (var persona in PersonaManager.PersonaDictionary) {
-        Debug.Log("lolol");
             if(persona.Value == 0)
             {
                 Stars[starIndex].texture = star1.texture;
