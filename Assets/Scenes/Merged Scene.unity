@@ -660,10 +660,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    is this badge on your shirt?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":289.200043,"yPos":109.600494},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    is this badge on your shirt?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":290.000031,"yPos":109.600494},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It
     is from a famous museum from my city, the Guegenhiem in Bilbao. I have always
     been fascinated by its appearance and how unique it is.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Benat
-    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -2263,13 +2263,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 6
   json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.2,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey
-    there! How can I help?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":286.8,\"yPos\":190.40004},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Of
-    course! Would you like some coffee first?\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.799957,\"yPos\":107.199982},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Hola!
+    there! How can I help?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":286.8,\"yPos\":190.40004},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Of
+    course! Would you like some coffee first?\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.999939,\"yPos\":107.999985},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Hola!
     I don\u2019t know what study I want to do next year, do you think you can help
     me with that?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Benat
-    de Vos\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":286.8,\"yPos\":276.801575},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    de Vos\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":286.8,\"yPos\":276.801575},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     thank you, I\u2019m good!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Benat
-    de Vos\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    de Vos\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -5408,10 +5408,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    is this?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":279.600037,"yPos":114.4005},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    is this?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":279.600037,"yPos":114.4005},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
     from my favorite football team. My whole family is a fan of Athletic Bilbao,
     it''s just part of our lives. So I try to show my support even here.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Benat
-    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -6545,7 +6545,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 0afc76254568dbb45937a642b1e5630d, type: 3}
 --- !u!114 &454751155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6564,7 +6564,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c74ad77bf90c0414ab0c791ca15cd45d, type: 3}
 --- !u!1 &462182514
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,7 +9259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -38842.254, y: 739.1182}
+  m_AnchoredPosition: {x: -39061.39, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -15750,7 +15750,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 95959123cfd3b4a4cb8fe1aef930259a, type: 3}
 --- !u!114 &1048407259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15769,7 +15769,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 75d9d16be0d928d4d9e8757b5ecb6757, type: 3}
 --- !u!1 &1049064707
 GameObject:
   m_ObjectHideFlags: 0
@@ -17293,10 +17293,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"How
-    about going through with this major?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":280.9999,"yPos":96.79996},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":114.200012,"yPos":77.20001},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"How
+    about going through with this major?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":113.3999,"yPos":163.999969},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
     thank you. I didn''t think of this before but I might give it a go!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Benat
-    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -22355,7 +22355,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b72b16c0646545b4b8937998a9913660, type: 3}
 --- !u!114 &1515096518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22374,7 +22374,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 690a42c909a01be4389c43855ee82dd8, type: 3}
 --- !u!1 &1523764330
 GameObject:
   m_ObjectHideFlags: 0
@@ -22622,7 +22622,7 @@ MonoBehaviour:
   NodeID: 5
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: aecb2e0cb6457854e9ed8034567781aa, type: 3}
 --- !u!114 &1526720112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22641,7 +22641,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 95e27131d3b1f984d84ebda19cf35133, type: 3}
 --- !u!114 &1526720113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22660,7 +22660,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9951f9c3671e9e748b27396f10879847, type: 3}
 --- !u!114 &1526720114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22679,7 +22679,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 851a6f9144d91d0449e1e36fb719dbe8, type: 3}
 --- !u!1 &1533198723
 GameObject:
   m_ObjectHideFlags: 0
@@ -23316,12 +23316,12 @@ MonoBehaviour:
   CurrentIDCounter: 6
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     see that during intro week you took part in many activities with the study association
-    CHEOPS. Why is that?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286.8,"yPos":190.400024},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    see, now that''s information I can work with!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":282.8,"yPos":107.199982},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    CHEOPS. Why is that?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286.8,"yPos":190.400024},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    see, now that''s information I can work with!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":282.8,"yPos":107.199982},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"It
     just seemed like a group of people that aligned with my interests. Plus they
     are constantly hosting activities with Building Environment students, who are
     very active.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Benat
-    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    de Vos","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -27592,7 +27592,7 @@ MonoBehaviour:
     it has crossed my mind that I want to try something new. Broaden my perspective
     if you will. I want a study that is completely different from what I currently
     do, but that still applies the skills that I have.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Erik
-    van der Spek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":283.5999,\"yPos\":265.600342},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u2019ll
+    van der Spek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.799927,\"yPos\":266.400146},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u2019ll
     see what I can do.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
@@ -30409,7 +30409,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 5cf6cdca45ca6da44b99d0ba650fe3da, type: 3}
 --- !u!114 &2094508841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30428,7 +30428,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 4c28c28f1799e86498f9804ae791bf4d, type: 3}
 --- !u!114 &2094508842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30447,7 +30447,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8a2285b363f1d944987fdf9ef172b50a, type: 3}
 --- !u!1 &2095682843
 GameObject:
   m_ObjectHideFlags: 0
