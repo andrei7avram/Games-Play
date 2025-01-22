@@ -2529,7 +2529,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &160744331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 58de3e227f5f41b439d72f63cf29167f, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1001 &161081759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":21.2000122},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
     are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Erik
     van der Spek","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":147.199509},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
@@ -3194,8 +3194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":178.199982,"yPos":146.800034},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
-    are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Batman","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":179.999969,"yPos":271.999542},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+    are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Batman","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":147.199509},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
@@ -3405,7 +3405,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &226720018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3554,9 +3554,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":67,"yPos":131.6},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
     are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jong
-    Shin","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":68.79999,"yPos":256.7995},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+    Shin","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":147.1995},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
@@ -3844,7 +3844,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &265954574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3863,7 +3863,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4d93c98019ffe7f41bb11c89c29a926b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &269382151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6676,7 +6676,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &462182517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6695,7 +6695,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &463729844
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,9 +7813,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":102.200012,"yPos":106.799988},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
     are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":104,"yPos":231.9995},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":146.3995},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
@@ -8933,9 +8933,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":230.599976,"yPos":115.599991},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
     are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Senna
-    Garcia","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":232.399963,"yPos":240.7995},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+    Garcia","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":147.199509},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
@@ -9320,7 +9320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36417.594, y: 739.1182}
+  m_AnchoredPosition: {x: -37140.535, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -12292,23 +12292,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":109.399994,\"yPos\":-348.399963},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
-    morning! How can I help?\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":111.999969,\"yPos\":-36.0003357},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes
-    you are! Senna is your name, right?\\n\\n\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":113.599945,\"yPos\":-191.200333},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hi
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":273.800049,\"yPos\":-246.800034},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
+    morning! How can I help?\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":276.400024,\"yPos\":-78.40071},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes
+    you are! Senna is your name, right?\\n\\n\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":273.2,\"yPos\":-162.4008},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hi
     there, excuse me, I\u2019m here for an appointment with the study advisor. Am
     I at the right location?\\n\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Senna
-    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":110.399994,\"yPos\":122.399109},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes
+    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.200043,\"yPos\":3.19789124},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes
     it is, how do you know my name? Are you stalking me\u2026\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Senna
-    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":104.800049,\"yPos\":260.799},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No,
+    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.8001,\"yPos\":85.59718},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No,
     haha. On my computer I have a bio page which contains information about all people
     that ask for my guidance. It contains the information you shared when making
-    an appointment, it helps me recommend a bachelor study which fits your interests!\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":117.600037,\"yPos\":380.799377},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahh,
+    an appointment, it helps me recommend a bachelor study which fits your interests!\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.800079,\"yPos\":169.597916},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahh,
     okay, that makes a lot of sense! I can be paranoid sometimes, sorry!\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Senna
-    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":115.200073,\"yPos\":500.799866},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285.200165,\"yPos\":252.798248},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     worries, I\u2019ll go through the selection of bachelor studies the university
-    offers to see which one fits most to your interests!\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":116.000122,\"yPos\":638.399841},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okay,
+    offers to see which one fits most to your interests!\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287.60022,\"yPos\":334.3988},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okay,
     cheers!\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Senna
-    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Garcia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -15169,7 +15169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":170.199982,"yPos":150.800034},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":171.999969,"yPos":275.999542},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":147.199509},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
@@ -16784,7 +16784,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &1104634810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16803,7 +16803,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 725e45e128f617b46bec39dd73cff458, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &1105643784
 GameObject:
   m_ObjectHideFlags: 0
@@ -16889,7 +16889,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &1108390817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16908,7 +16908,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: bfd7d5aeae0025f47b3615721c18ee30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &1115819775
 GameObject:
   m_ObjectHideFlags: 0
@@ -21235,7 +21235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":156.6,\"yPos\":122.000015},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Batman?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":155.200043,\"yPos\":248.8005},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Shhh
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.2,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Batman?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.800049,\"yPos\":148.800491},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Shhh
     keep it down, I can\u2019t let people know I'm here. I had to sneak into your
     office, so please keep it down. All my information is on the online profile.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Batman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -21627,7 +21627,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &1440242188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21646,7 +21646,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 6879a6ec2f2203e4589ba43190c23364, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &1444335122
 GameObject:
   m_ObjectHideFlags: 0
@@ -24389,7 +24389,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 096f04b658fe0174b957cf311e954656, type: 3}
 --- !u!114 &1653270599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24408,7 +24408,7 @@ MonoBehaviour:
   NodeID: 10
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: c2fb255fd0221d744918a9104355f99e, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 3ccecf2c0e0203c49bceb9c3bc9a458f, type: 3}
 --- !u!1 &1660154543
 GameObject:
   m_ObjectHideFlags: 0
@@ -24673,7 +24673,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: c2fb255fd0221d744918a9104355f99e, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e8b4ad195641cf1499ddab7e490daff9, type: 3}
 --- !u!114 &1677388852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24692,7 +24692,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c1acfcf153279e14081cf30b350caaaa, type: 3}
 --- !u!114 &1677388853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24711,7 +24711,7 @@ MonoBehaviour:
   NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: c2fb255fd0221d744918a9104355f99e, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 3903d18fb0559654bac8ab984b0679bc, type: 3}
 --- !u!114 &1677388854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24730,7 +24730,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 75bf73fafd9d1c548b9968365159c9ae, type: 3}
 --- !u!114 &1677388855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24749,7 +24749,7 @@ MonoBehaviour:
   NodeID: 5
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: c2fb255fd0221d744918a9104355f99e, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: cb341bea5b1406d48a214aa9aac82734, type: 3}
 --- !u!114 &1677388856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24768,7 +24768,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: c2fb255fd0221d744918a9104355f99e, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1a10ec3af5c2a334d9b174da65ab26df, type: 3}
 --- !u!114 &1677388857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24787,7 +24787,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: db564d7ead89a5b44af13718d004168f, type: 3}
 --- !u!114 &1677388858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24806,7 +24806,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 851a6f9144d91d0449e1e36fb719dbe8, type: 3}
 --- !u!1 &1680552812
 GameObject:
   m_ObjectHideFlags: 0
@@ -24967,9 +24967,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"How
-    about this major?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286.8,"yPos":120.000031},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    about this major?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286.8,"yPos":120.000031},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     appreciate your guidance. Thank you for your time!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Senna
-    Garcia","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Garcia","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -25491,7 +25491,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &1718691234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25510,7 +25510,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: c2fb255fd0221d744918a9104355f99e, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &1731272118
 GameObject:
   m_ObjectHideFlags: 0
@@ -26004,8 +26004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":415,"yPos":145},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    believe this major suits you perfectly.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":416.799957,"yPos":241.400009},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Facinating
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    believe this major suits you perfectly.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":285.999969,"yPos":118.400009},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Facinating
     recommendation. Have a nice day!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jong
     Shin","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -28741,9 +28741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":142.200012,"yPos":148.400024},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
     are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":144,"yPos":273.599548},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286,"yPos":147.199524},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
@@ -29302,7 +29302,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1e2d5c91a36146441bef88c13090ba2b, type: 3}
 --- !u!114 &1978185857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29321,7 +29321,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2f77d780d9a5d854db8270b6404997da, type: 3}
 --- !u!1 &1993565358
 GameObject:
   m_ObjectHideFlags: 0
@@ -29903,9 +29903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":159.000015,"yPos":110},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":66.99997,"yPos":106.000031},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
     are you playing Flappy Egbert? That is kind of unprofessional!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Sascha
-    Jonkers","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":160.8,"yPos":235.199509},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
+    Jonkers","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":67.9999542,"yPos":231.999542},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry!
     I will get right back to work.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
