@@ -991,9 +991,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    like the pin you have, what does it represent?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":282.800018,"yPos":148.800491},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    like the pin you have, what does it represent?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":282.800018,"yPos":148.800491},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
     part of who I am and the community I''m a part of.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -4744,18 +4744,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":308.2,\"yPos\":-238.000046},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
-    afternoon, how can I help?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":305.2,\"yPos\":-55.1997261},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    sure hope so, It\u2019s what I\u2019m paid to do!\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":303.599976,\"yPos\":-144.800034},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Heya!
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":288.199646,\"yPos\":-288.39978},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
+    afternoon, how can I help?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287.59967,\"yPos\":-103.199738},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    sure hope so, It\u2019s what I\u2019m paid to do!\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285.999634,\"yPos\":-192.800049},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Heya!
     I am looking for a bachelor that best fits my interests. Do you think you can
     help me with that?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":305.199951,\"yPos\":34.4015465},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mmm,
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287.5996,\"yPos\":-13.59848},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mmm,
     okay! Then if your recommendation sucks, I guess I should report this to your
     supervisor to ensure a proper salary decrease.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":305.2,\"yPos\":123.200241},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":306.800049,\"yPos\":215.199966},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Just
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287.59967,\"yPos\":75.20068},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.399719,\"yPos\":167.200241},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Just
     kidding!\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":309.2,\"yPos\":312.800079},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hahaha,
-    I\u2019ll get right to it.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":291.59967,\"yPos\":264.8001},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hahaha,
+    I\u2019ll get right to it.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -5334,17 +5334,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.2,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lisa,
-    are you back again? Was the bachelor not a good fit after all?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.799927,\"yPos\":116.799957},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":221.000031,\"yPos\":-146.8001},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lisa,
+    are you back again? Was the bachelor not a good fit after all?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218.599945,\"yPos\":-51.20012},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey
     study advisor! Yes, unfortunately, it wasn't a perfect fit. I won\u2019t report
     that to your supervisor though, that was just a joke of course!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285.2,\"yPos\":210.400085},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Haha,
-    of course! So, are you back here to find a bachelor that fits better?\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.8,\"yPos\":309.600342},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":221.200012,\"yPos\":42.3999939},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Haha,
+    of course! So, are you back here to find a bachelor that fits better?\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":225.200012,\"yPos\":143.200073},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
     exactly! I\u2019ve heard from friends that it is possible to switch to another
     major at Eindhoven University of Technology. I was hoping you could recommend
     something to me again.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.399963,\"yPos\":406.400024},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
-    of course! I\u2019ll get right to it.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":225.199982,\"yPos\":239.200241},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
+    of course! I\u2019ll get right to it.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -5475,7 +5475,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: a7ded2e1a33288241b018f2c5a9cabc4, type: 3}
 --- !u!114 &384508677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5494,7 +5494,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 98351fdb237f64d47a789c5981223bd0, type: 3}
 --- !u!1 &400992802
 GameObject:
   m_ObjectHideFlags: 0
@@ -7840,7 +7840,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: fb194fc6dd205854fbff05e384e5d7ea, type: 3}
 --- !u!114 &555095983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,7 +7859,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 047a8577993dbcc4a8addbac44c945ec, type: 3}
 --- !u!114 &555095984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7878,7 +7878,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e02145efe050aa54393dcbf55cf7c7f7, type: 3}
 --- !u!1 &557527527
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,7 +9259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39061.39, y: 739.1182}
+  m_AnchoredPosition: {x: -39313.273, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -10195,7 +10195,7 @@ MonoBehaviour:
   NodeID: 5
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 95032aa6549432b4ab84e6e59eeaaa75, type: 3}
 --- !u!114 &719035545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10214,7 +10214,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 39bd97fcd1ff17e479cb2eab9dc167e2, type: 3}
 --- !u!114 &719035546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10233,7 +10233,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7536fb542d32bb146897b5c3faa9385d, type: 3}
 --- !u!114 &719035547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10252,7 +10252,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 851a6f9144d91d0449e1e36fb719dbe8, type: 3}
 --- !u!114 &719035548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10271,7 +10271,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: f79792128303afb449852c26fa78c0d3, type: 3}
 --- !u!114 &719035549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10290,7 +10290,7 @@ MonoBehaviour:
   NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 4525ec5b70bbb834ea9483a0f7033e70, type: 3}
 --- !u!114 &719035550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10768,10 +10768,10 @@ MonoBehaviour:
   CurrentIDCounter: 9
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
     you, hopefully this time I dont have to come back another time!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":281.799927,"yPos":116.799957},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    hope so as well, however I am fairly certain that this is the major for you!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":285.2,"yPos":210.400085},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":281.799927,"yPos":116.799957},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    hope so as well, however I am fairly certain that this is the major for you!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":285.2,"yPos":210.400085},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
     bye and thank you for all your help!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -11038,11 +11038,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
   json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.2,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    do you mean by finding comfort with the \u201Cconstants\u201D?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.000031,\"yPos\":148.800491},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Subjects
+    do you mean by finding comfort with the \u201Cconstants\u201D?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282,\"yPos\":129.6005},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Subjects
     such as Math and Programming just make sense to me, they remain the same assuming
     the logic is true. With moving on a regular basis throughout my life, it's quite
     nice to know some things remain the same.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -11106,7 +11106,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: f4301bf009f9b6548892a7bfa21f44aa, type: 3}
 --- !u!114 &767840688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11125,7 +11125,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 4abb96af38e0586439ee9261f8c94543, type: 3}
 --- !u!1 &782199937
 GameObject:
   m_ObjectHideFlags: 0
@@ -11304,7 +11304,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 0df8359d1fb84b042b4a4d985ed8495c, type: 3}
 --- !u!114 &782758880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11323,7 +11323,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7e74eeef4b75cef408db124453e24bb1, type: 3}
 --- !u!114 &782758881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11342,7 +11342,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6c5f3c281a3da5f4781cb0aad8752f76, type: 3}
 --- !u!114 &782758882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11361,7 +11361,7 @@ MonoBehaviour:
   NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 49517e08145b64b46816039ae9ab6e7b, type: 3}
 --- !u!114 &782758883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11380,7 +11380,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: ce0c4cd491f76724193ae6df3cd9cf9b, type: 3}
 --- !u!114 &782758884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11455,7 +11455,7 @@ MonoBehaviour:
   NodeID: 10
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5ad3eaa72946784ea4e2d84bc10f209, type: 3}
 --- !u!114 &784203483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11474,7 +11474,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 5bb3fddf743ed784280a313e67b99bff, type: 3}
 --- !u!114 &784203484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11512,7 +11512,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 681ece5de1eeb5d43a7e07a5bd2518cc, type: 3}
 --- !u!114 &784203486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11531,7 +11531,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: aec5f41362b1d54438e087358a86a711, type: 3}
 --- !u!114 &784203487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11550,7 +11550,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 92637dfa099704c4dacd0f806338fc83, type: 3}
 --- !u!1 &789863286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2774383826603585361, guid: c66cf9cc42a8a5248975379bfb94eb29, type: 3}
@@ -16574,7 +16574,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 0deec364142c5be45afa8ffaa1937b12, type: 3}
 --- !u!114 &1094572766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16593,7 +16593,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7e8ff339c77dc8147a4dfa4393e13fe2, type: 3}
 --- !u!1 &1101452485
 GameObject:
   m_ObjectHideFlags: 0
@@ -17203,7 +17203,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31aeb202c455a944eb1ef246779dbee7, type: 3}
 --- !u!114 &1126704616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17222,7 +17222,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7f88936223d17984597918a7f9f10b5d, type: 3}
 --- !u!114 &1126704617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17241,7 +17241,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 490deb5b243d2a94ea9901993e8d12ed, type: 3}
 --- !u!4 &1135096269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3d2278a8f5f693489e3a09cd2b74fc7, type: 3}
@@ -19503,16 +19503,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":279.400024,"yPos":50},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
     bye, see you next time! Oh, well hopefully not actually. If I need to come for
     advice again that wouldn''t be good!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":281.799927,"yPos":116.799957},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":276.999939,"yPos":144.799957},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
     worry about that! It''s pretty common for students to switch during their first-year.
     Of course, it''s not ideal but if you ever find your choice wasn''t the right
-    one, it''s not a big problem.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":285.2,"yPos":210.400085},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay,
+    one, it''s not a big problem.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":280.400024,"yPos":238.400085},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay,
     then maybe I will see you next time! Who knows what the future has in store for
     me...","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -19682,11 +19682,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.2,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    deck of play cards?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.000031,\"yPos\":148.800491},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":285,\"yPos\":136.400024},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    deck of play cards?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":280.400055,\"yPos\":233.600525},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
     way to kill some time, and take mental breaks. Plus who doesn\u2019t like a good
     magic trick.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -20494,18 +20494,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":284.2,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":241.000031,"yPos":45.1999969},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"If
     you had to state one reason why you disliked your previous option what would
-    it be?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":277.799927,"yPos":119.799957},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    it be?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":242.599945,"yPos":128.59996},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     would say probably the fact that there was no tangible output to what I was making.
     It was too digital!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":281.2,"yPos":213.400085},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":240.400024,"yPos":207.800064},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     see, so what you are saying is that you would like to recieve an actual physical
-    feedback to your work.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":279.2,"yPos":341},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Exactly,
+    feedback to your work.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":242.400024,"yPos":290.600159},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Exactly,
     I want to feel as if my work is culminated in something more impactful than just
     lines of code.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lisa
-    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":277.2,"yPos":461},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
-    you for your input, I think I might have a better major for you in mind!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Okeke","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":241.200012,"yPos":371.4002},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
+    you for your input, I think I might have a better major for you in mind!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Advisor","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -24535,7 +24535,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f7f5c1b208d72bb4b8166e46f30399a0, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 754596bab4bc44246b9200f0defc3807, type: 3}
 --- !u!114 &1676153024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24554,7 +24554,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ddd00af064ed8bc46936876581ef0cd4, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: ad7db74874d009048bda2e1e86e765cd, type: 3}
 --- !u!1 &1677388849
 GameObject:
   m_ObjectHideFlags: 0
@@ -24968,10 +24968,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
   json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":284.2,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
-    were valedictorian for your school. Impressive.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.000031,\"yPos\":148.800552},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    were valedictorian for your school. Impressive.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Advisor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":280.400024,\"yPos\":132.000565},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     was always an active member of every community I was part of. That\u2019s why
     I think I got selected as the best performing student in my year.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lisa
-    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Okeke\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
