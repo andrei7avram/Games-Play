@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,12 +54,12 @@ public class PC : MonoBehaviour
                     ray = targetCamera.ScreenPointToRay(Input.mousePosition);
                     Debug.Log("Switching to target camera");
                    
-                }else if (hit.collider.gameObject.CompareTag("Flyers") && dialogueBox.activeSelf == false) {
+                }else if (hit.collider.gameObject.CompareTag("Flyers") && dialogueBox.activeSelf == false && personaManager.currentPersona.Attributes.Name != null) {
                     
                     FlyerCanvas.enabled = true;
                     Debug.Log("FlyerCanvas active");
                     
-                }else if (hit.collider.gameObject.CompareTag("Bell")) {
+                }else if (hit.collider.gameObject.CompareTag("Bell") && dialogueBox.activeSelf == false && FlyerCanvas.enabled == false) {
                     personaManager.bellIncrement();
                     GetComponent<AudioSource>().PlayOneShot(bellSound);
 
@@ -111,6 +112,12 @@ void SwitchToPosterCamera()
     currentCamera.gameObject.SetActive(false); 
     posterCamera.gameObject.SetActive(true);
     worldSpaceCanvas.worldCamera = posterCamera; // Add here
+}
+
+public void CloseFlyerCanvas(){
+    if (FlyerCanvas.enabled == true) {
+        FlyerCanvas.enabled = false;
+    }
 }
 
     public void Button()

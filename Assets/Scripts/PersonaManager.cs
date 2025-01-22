@@ -20,12 +20,11 @@ public class PersonaManager : MonoBehaviour
 
     public PersonaScript levelCreator;
 
+
     public bool count = false;
 
     public GameObject finalScreen;
     public Animator transition;
-
-    public Sprite emailtab1;
     
     public Sprite emailtab2;
 
@@ -34,8 +33,6 @@ public class PersonaManager : MonoBehaviour
     public Image emailTab;
 
     public int currentlevel = 1;
-
-    private bool bell = false;
 
     public UnityEngine.UI.Image bioTab;
     public GameObject person1;
@@ -71,15 +68,12 @@ public class PersonaManager : MonoBehaviour
 
     public Canvas FinalScoreCanvas;
 
-    public bool isFinalScoreCanvasActive = false;
-
     public int finalScore = 0;
 
     public String selectedCourse = "";
 
     public StarRenderer starRenderer;
 
-    //public List<TextMeshProUGUI> textMeshProObjects;
 
 
     public GameObject bioButton1;
@@ -112,35 +106,12 @@ public class PersonaManager : MonoBehaviour
                 Debug.Log("Persona already exists in dictionary");
             }
         }
-        foreach (var kvp in PersonaDictionary)
-        {
-            Debug.Log("Key: " + kvp.Key.Attributes.Name + " Value: " + kvp.Value);
-        }
-    }
-
-    void Update()
-    {   
-        /*
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            DisplayAllPersonas();
-        } else if (Input.GetKeyDown(KeyCode.C))
-        {
-            DisplayCurrentPersona();
-        } else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            IncrementCurrentPersona();
-        }else if (Input.GetKeyDown(KeyCode.E)) {
-            PopulateDictionary();
-        }
-        */
     }
 
     public void DisplayAllPersonas()
     {
         foreach (var persona in Personas)
         {
-            Debug.Log("Name: " + persona.Attributes.Name);
             
         }
     }
@@ -151,43 +122,52 @@ public class PersonaManager : MonoBehaviour
         obj.SetActive(true);
     }
 
+    private IEnumerator AssignAfterDelay(Sprite bio,float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        bioTab.sprite = bio;
+    }
+
     public void DisplayCurrentPersona()
     {
         StartCoroutine(SetAllPersonInactive());
-        Debug.Log("Name: " + currentPersona.Attributes.Name);
         
         if (currentPersona.Attributes.Name == "Person1") {
             StartCoroutine(SetActiveAfterDelay(person1, 1f));
-            bioTab.sprite = bio1;
+            //bioTab.sprite = bio1;
+            StartCoroutine(AssignAfterDelay(bio1, 1f));
             
         } else if (currentPersona.Attributes.Name == "Person2") {
             StartCoroutine(SetActiveAfterDelay(person2, 1f));
-            bioTab.sprite = bio2;
+            //bioTab.sprite = bio2;
+            StartCoroutine(AssignAfterDelay(bio2, 1f));
             
         } else if (currentPersona.Attributes.Name == "Person3" && count == false) {
             StartCoroutine(SetActiveAfterDelay(person3, 0.3f));
-            bioTab.sprite = bio3;
-            Debug.Log("PPPPPPPPPPPPPPPPPPPPPPPP");
+            //bioTab.sprite = bio3;
+            StartCoroutine(AssignAfterDelay(bio3, 0.3f));
             count = true;
             
         } else if (currentPersona.Attributes.Name == "Person4") {
             person3.SetActive(false);
-            Debug.Log("LLLLLLLLLL");
             person4.SetActive(true);
-            bioTab.sprite = bio4;
+            //bioTab.sprite = bio4;
+            StartCoroutine(AssignAfterDelay(bio4, 0f));
             count = false;
             bioButton1.SetActive(true);
             
         } else if (currentPersona.Attributes.Name == "Person5") {
             StartCoroutine(SetActiveAfterDelay(person5, 1f)); 
-            bioTab.sprite = bio5;
+            //bioTab.sprite = bio5;
+            StartCoroutine(AssignAfterDelay(bio5, 1f));
             bioButton2.SetActive(true);
             bioButton1.SetActive(false);
             bioButton3.SetActive(true);
             
         } else if (currentPersona.Attributes.Name == "Person6"  && count == false) {
             StartCoroutine(SetActiveAfterDelay(person6, 0.4f)); 
-            bioTab.sprite = bio6;
+            //bioTab.sprite = bio6;
+            StartCoroutine(AssignAfterDelay(bio6, 0.4f));
             count = true;
             bioButton2.SetActive(false);
             bioButton3.SetActive(false);
@@ -197,17 +177,20 @@ public class PersonaManager : MonoBehaviour
             person6.SetActive(false);
             person7.SetActive(true); 
             count = false;
-            bioTab.sprite = bio7;
+            //bioTab.sprite = bio7;
+            StartCoroutine(AssignAfterDelay(bio7, 0f));
             bioButton4.SetActive(true);
             bioButton5.SetActive(true);
         } else if (currentPersona.Attributes.Name == "Person8") {
             StartCoroutine(SetActiveAfterDelay(person8, 1f)); 
-            bioTab.sprite = bio8;
+            //bioTab.sprite = bio8;
+            StartCoroutine(AssignAfterDelay(bio8, 1f));
             bioButton4.SetActive(false);
             bioButton5.SetActive(false);
         } else if (currentPersona.Attributes.Name == "Person9") {
             StartCoroutine(SetActiveAfterDelay(person9, 1f)); 
-            bioTab.sprite = bio9;
+            //bioTab.sprite = bio9;
+            StartCoroutine(AssignAfterDelay(bio9, 1f));
         }
 
 
@@ -233,9 +216,9 @@ public class PersonaManager : MonoBehaviour
             person7.SetActive(false);
             person8.SetActive(false);
             person9.SetActive(false);
-            Debug.Log("Between");
+            
         } else {
-            Debug.Log("In- Start");
+           
             yield return new WaitForSeconds(0.4f);
             person1.SetActive(false);
             person2.SetActive(false);
@@ -244,7 +227,7 @@ public class PersonaManager : MonoBehaviour
             person7.SetActive(false);
             person8.SetActive(false);
             person9.SetActive(false);
-            Debug.Log("In- End");
+            
         }
     }
 
@@ -255,14 +238,14 @@ public class PersonaManager : MonoBehaviour
             
             currentPersona = Personas[index];
             index++;
-            Debug.Log("Index: " + index + " Count: " + Personas.Count);
+           
         }else if (index == Personas.Count)
         {
             //index = 0;
             //currentPersona = Personas[index];
             //index++;
             isLevelComplete = true;
-            Debug.Log("No more personas");
+            
         }
 
         return currentPersona;
@@ -385,10 +368,10 @@ public class PersonaManager : MonoBehaviour
     public void evaluateAnswer()
     {       
         if (currentPersona.Attributes.Name == "Person9"){
-                Debug.Log("Correct");
+                
                 PersonaDictionary[currentPersona] =  2;
                 finalScore += 2;
-                Debug.Log(finalScore);
+                
                 //IncrementCurrentPersona();
                 //DisplayCurrentPersona();
                 if (isLevelComplete)
@@ -397,10 +380,10 @@ public class PersonaManager : MonoBehaviour
                 }
             } else if (currentPersona.correctAnswers[0] == selectedCourse)
             {
-                Debug.Log("Correct");
+                
                 PersonaDictionary[currentPersona] =  2;
                 finalScore += 2;
-                Debug.Log(finalScore);
+                
                 //IncrementCurrentPersona();
                 //DisplayCurrentPersona();
                 if (isLevelComplete)
@@ -409,10 +392,10 @@ public class PersonaManager : MonoBehaviour
                 }
             } else if (currentPersona.correctAnswers[1] == selectedCourse)
             {
-                Debug.Log("Partially Correct");
+                
                 PersonaDictionary[currentPersona] =  1;
                 finalScore += 1;
-                Debug.Log(finalScore);
+                
                 //IncrementCurrentPersona();
                 //DisplayCurrentPersona();
                 if (isLevelComplete)
@@ -421,9 +404,9 @@ public class PersonaManager : MonoBehaviour
                 }
             } else
             {
-                Debug.Log("Incorrect");
+                
                 PersonaDictionary[currentPersona] =  0;
-                Debug.Log(finalScore);
+                
                 //IncrementCurrentPersona();
                 //DisplayCurrentPersona();
                 if (isLevelComplete)
