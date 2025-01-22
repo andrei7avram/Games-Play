@@ -81,6 +81,7 @@ public class PersonaManager : MonoBehaviour
     public NPCConversation ConversationPerson7;
     public NPCConversation ConversationPerson8;
     public NPCConversation ConversationPerson9;
+    private AudioSource audioSource;
 
     public static void PopulateDictionary()
     {
@@ -414,6 +415,8 @@ public class PersonaManager : MonoBehaviour
         isLevelComplete = false;
         finalScore = 0;
         starRenderer.LoadStars();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
         //IncrementCurrentPersona();
         
     }
