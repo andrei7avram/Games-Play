@@ -27,4 +27,12 @@ public class Conversation : MonoBehaviour
     {
         ConversationManager.Instance.StartConversation(myConversation);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ConversationManager.Instance.EndConversation();
+        }
+    }
 }
