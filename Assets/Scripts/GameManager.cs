@@ -6,6 +6,8 @@ using DialogueEditor;
 public class GameManager : MonoBehaviour
 {
     public Player player;
+
+    public PersonaManager personaManager;
     public Vector3 playerStartPosition = new Vector3(0, 0, 0); // Desired reset position for the player.
     public bool isPaused = true; // Game starts paused.
     private AudioSource WingFlap;
@@ -46,7 +48,7 @@ public class GameManager : MonoBehaviour
             RestartGame();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isPaused)
+        if (Input.GetKeyDown(KeyCode.Space) && isPaused && personaManager.egbertTab.activeSelf == true)
         {
             StartGame();
             WingFlap.Play();

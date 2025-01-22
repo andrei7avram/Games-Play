@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour
 
     //Player state.
     public bool isDead = false;
+
+    public PersonaManager personaManager;
     private bool isPlayerEnabled = false;
     private AudioSource WingFlap;
 
@@ -23,15 +26,16 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         // Skip movement logic if the game is paused, the player is dead, or the player is disabled.
-        if (gameManager.isPaused || isDead || !isPlayerEnabled)
+        if (gameManager.isPaused || isDead || !isPlayerEnabled || personaManager.egbertTab.activeSelf == false)
         {
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && personaManager.egbertTab.activeSelf == true)
+        {   
+            Debug.Log(personaManager.egbertTab.activeSelf);
             playerRigidbody.velocity = Vector2.up * velocity;
             WingFlap.Play();
         }

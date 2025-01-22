@@ -569,8 +569,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 886288128}
   m_HandleRect: {fileID: 886288127}
   m_Direction: 0
-  m_Value: 0.4999999
-  m_Size: 0.61430097
+  m_Value: 0
+  m_Size: 0.9992442
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1981,6 +1981,7 @@ MonoBehaviour:
   velocity: 2.4
   gameManager: {fileID: 1919114419}
   isDead: 0
+  personaManager: {fileID: 1179917787}
 --- !u!50 &143529414
 Rigidbody2D:
   serializedVersion: 4
@@ -9334,7 +9335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 739.1182}
+  m_AnchoredPosition: {x: -243.17514, y: 739.1182}
   m_SizeDelta: {x: 0, y: 611.7485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656406545
@@ -18371,6 +18372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCreator: {fileID: 1179917788}
   count: 0
+  egbertTab: {fileID: 1660154543}
   finalScreen: {fileID: 1419203895}
   transition: {fileID: 1154629300}
   emailtab2: {fileID: 21300000, guid: 4d670ef3d7616d040ba99bf2f14c8ef0, type: 3}
@@ -28589,6 +28591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 143529413}
+  personaManager: {fileID: 1179917787}
   playerStartPosition: {x: 0, y: 0, z: -100}
   isPaused: 1
   ConversationPerson1: {fileID: 628594102}

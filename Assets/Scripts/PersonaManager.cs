@@ -2,15 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 using DialogueEditor;
 using Image = UnityEngine.UI.Image;
-using System.Runtime.InteropServices.WindowsRuntime;
-using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
 
 public class PersonaManager : MonoBehaviour
 {
@@ -22,6 +16,8 @@ public class PersonaManager : MonoBehaviour
 
 
     public bool count = false;
+
+    public GameObject egbertTab;
 
     public GameObject finalScreen;
     public Animator transition;
