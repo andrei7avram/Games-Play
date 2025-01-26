@@ -60,7 +60,7 @@ public class PersonaScript : MonoBehaviour
     public void Start()
     {
         Level(1);
-        PersonaManager.PopulateDictionary();
+        //PersonaManager.PopulateDictionary();
     }
 
     public void Level(int level)
@@ -147,7 +147,7 @@ public class PersonaScript : MonoBehaviour
             exampleAttributes2
             );
 
-            PersonaManager.Personas.Add(examplePersona2);
+            
 
             Attribute exampleAttributes4 = new Attribute(
             "Person6",
@@ -159,10 +159,14 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaScript examplePersona4 = new PersonaScript(
-            "Some background information", new string[] { "Electrical", "Industrial Design" },
+            "Some background information", new string[] { "Electrical", "Industrial" },
             exampleAttributes4
             );
+            
+            PersonaManager.Personas.Add(examplePersona2);
             PersonaManager.Personas.Add(examplePersona4);
+            
+            
         } else if (level == 3) {
             Debug.Log("Level 3");
 
@@ -213,7 +217,9 @@ public class PersonaScript : MonoBehaviour
             );
 
             PersonaManager.Personas.Add(examplePersona7);
+            
         }
+        PersonaManager.PopulateDictionary();
         
     }
 }

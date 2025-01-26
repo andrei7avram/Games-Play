@@ -92,6 +92,7 @@ public class PersonaManager : MonoBehaviour
     public static void PopulateDictionary()
     {
         int value = 0;
+        PersonaDictionary.Clear();
         foreach (var persona in Personas)
         {
             if (!PersonaDictionary.ContainsKey(persona))
@@ -103,6 +104,22 @@ public class PersonaManager : MonoBehaviour
             }
         }
     }
+
+    /*private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("Logging all keys in PersonaDictionary:");
+            foreach (var key in PersonaDictionary)
+            {
+                Debug.Log(key.Key.Attributes.Name);
+            }
+        }else if (Input.GetKeyDown(KeyCode.S))
+        {
+            Debug.Log(currentPersona.Attributes.Name);
+            
+        }
+    }*/
 
     public void DisplayAllPersonas()
     {

@@ -27,15 +27,18 @@ public class StarRenderer : MonoBehaviour
 
        foreach (var persona in PersonaManager.PersonaDictionary) {
             if(persona.Value == 0)
-            {
+            {   
+                Debug.Log("Bronze " + starIndex + persona.Value + persona.Key.Attributes.Name);
                 Stars[starIndex].texture = star1.texture;
                 starIndex++;
             } else if (persona.Value == 1)
-            {
+            {   
+                Debug.Log("Silver " + starIndex + persona.Value + persona.Key.Attributes.Name);
                 Stars[starIndex].texture = star2.texture;
                 starIndex++;
             } else if (persona.Value == 2)
-            {
+            {   
+                Debug.Log("Gold " + starIndex + persona.Value + persona.Key.Attributes.Name);
                 Stars[starIndex].texture = star3.texture;
                 starIndex++;
             }
