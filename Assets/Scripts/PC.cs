@@ -45,7 +45,7 @@ public class PC : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 Debug.Log("Hit object: " + hit.collider.gameObject.name);
-                if (hit.collider.gameObject.CompareTag("Monitor") && FlyerCanvas.enabled == false)
+                if (hit.collider.gameObject.CompareTag("Monitor"))
                 {   
                     isTargetCameraActive = true;
                     isPosterCameraActive = false;
