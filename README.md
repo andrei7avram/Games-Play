@@ -1,7 +1,6 @@
 # 🎓 How Can I Help? – A TU/e Persuasive Game for Study Choice
 
 > **A serious game developed in Unity to help high school students explore bachelor programs at Eindhoven University of Technology (TU/e).**  
-> *Created for the "Designing for Meaningful Play" course at TU/e.*
 
 ---
 
