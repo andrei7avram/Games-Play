@@ -66,7 +66,6 @@ To convey the university's community atmosphere, the game incorporates:
 
 - Study and student associations (e.g., KL!NK, CHEOPS)
 - Posters and flyers representing clubs and activities
-- LGBTQ+ representation
 - Minigames (e.g., Flappy Egbert)
 - Realistic student narratives with diverse backgrounds and interests
 
